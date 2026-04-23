@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0f172a">
+<title>Банк автоматизаций · 50 ИИ-кейсов</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🤖%3C/text%3E%3C/svg%3E">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; -webkit-tap-highlight-color: transparent; }
+  .chip { transition: all .15s ease; }
+  .chip:active { transform: scale(.95); }
+  .card { transition: transform .15s ease, box-shadow .15s ease; }
+  .card:active { transform: scale(.98); }
+  @media (hover: hover) { .card:hover { transform: translateY(-2px); box-shadow: 0 8px 20px -8px rgba(0,0,0,.15); } }
+</style>
+</head>
+<body class="bg-slate-50 text-slate-900 min-h-screen pb-20">
+
+<header class="bg-slate-900 text-white px-5 py-5">
+  <div class="max-w-4xl mx-auto">
+    <div class="flex items-baseline justify-between">
+      <h1 class="text-xl font-bold">Банк автоматизаций</h1>
+      <span class="text-xs text-slate-400" id="updated"></span>
+    </div>
+    <p class="text-sm text-slate-300 mt-1">50 ИИ-кейсов по отделам</p>
+    <div class="flex gap-4 mt-3 text-sm">
+      <span class="text-emerald-400"><b id="stat-done">0</b> done</span>
+      <span class="text-amber-400"><b id="stat-wip">0</b> wip</span>
+      <span class="text-slate-400"><b id="stat-idea">0</b> idea</span>
+    </div>
+  </div>
+</header>
+
+<nav class="sticky top-0 z-10 bg-white border-b border-slate-200 px-3 py-3 shadow-sm">
+  <div class="max-w-4xl mx-auto space-y-2">
+    <div class="flex gap-2 overflow-x-auto pb-1 -mx-1 px-1" id="status-filters">
+      <button data-filter="status" data-value="all" class="chip shrink-0 px-3 py-1.5 rounded-full text-sm font-medium bg-slate-900 text-white">Все</button>
+      <button data-filter="status" data-value="done" class="chip shrink-0 px-3 py-1.5 rounded-full text-sm font-medium bg-slate-100 text-slate-700">✓ Готово</button>
+      <button data-filter="status" data-value="wip" class="chip shrink-0 px-3 py-1.5 rounded-full text-sm font-medium bg-slate-100 text-slate-700">◐ В работе</button>
+      <button data-filter="status" data-value="idea" class="chip shrink-0 px-3 py-1.5 rounded-full text-sm font-medium bg-slate-100 text-slate-700">○ Идея</button>
+    </div>
+    <div class="flex gap-2 overflow-x-auto pb-1 -mx-1 px-1" id="dept-filters">
+      <button data-filter="dept" data-value="all" class="chip shrink-0 px-3 py-1.5 rounded-full text-sm bg-slate-900 text-white">Все отделы</button>
+      <button data-filter="dept" data-value="Продажи" class="chip shrink-0 px-3 py-1.5 rounded-full text-sm bg-slate-100 text-slate-600">Продажи</button>
+      <button data-filter="dept" data-value="Маркетинг" class="chip shrink-0 px-3 py-1.5 rounded-full text-sm bg-slate-100 text-slate-600">Маркетинг</button>
+      <button data-filter="dept" data-value="Поддержка" class="chip shrink-0 px-3 py-1.5 rounded-full text-sm bg-slate-100 text-slate-600">Поддержка</button>
+      <button data-filter="dept" data-value="Операционка" class="chip shrink-0 px-3 py-1.5 rounded-full text-sm bg-slate-100 text-slate-600">Операционка</button>
+      <button data-filter="dept" data-value="HR" class="chip shrink-0 px-3 py-1.5 rounded-full text-sm bg-slate-100 text-slate-600">HR</button>
+      <button data-filter="dept" data-value="Финансы" class="chip shrink-0 px-3 py-1.5 rounded-full text-sm bg-slate-100 text-slate-600">Финансы</button>
+    </div>
+  </div>
+</nav>
+
+<main class="max-w-4xl mx-auto p-3 sm:p-5">
+  <div id="grid" class="grid grid-cols-1 sm:grid-cols-2 gap-3"></div>
+  <div id="empty" class="hidden text-center text-slate-400 py-16 text-sm">Ничего не найдено по фильтрам</div>
+</main>
+
+<template id="card-tpl">
+  <article class="card bg-white rounded-xl border border-slate-200 p-4 cursor-pointer">
+    <div class="flex items-center justify-between text-xs mb-2">
+      <span class="font-mono text-slate-400"></span>
+      <span class="status-badge px-2 py-0.5 rounded-full text-xs font-medium"></span>
+    </div>
+    <div class="dept-label text-xs text-slate-500 uppercase tracking-wide mb-1"></div>
+    <h3 class="font-semibold text-slate-900 leading-tight mb-3"></h3>
+    <p class="desc text-sm text-slate-600 leading-relaxed mb-3"></p>
+    <div class="meta hidden border-t border-slate-100 pt-3 space-y-1 text-xs text-slate-500">
+      <div class="flex gap-1 flex-wrap stack-row hidden"><span class="text-slate-400">Стек:</span><span class="stack-val text-slate-700"></span></div>
+      <div class="flex gap-1 client-row hidden"><span class="text-slate-400">Клиент:</span><span class="client-val text-slate-700"></span></div>
+      <div class="flex gap-1 result-row hidden"><span class="text-slate-400">Результат:</span><span class="result-val text-slate-700"></span></div>
+    </div>
+  </article>
+</template>
+
+<script>
+const IDEAS = [
+  // Продажи
+  {n:"01",dept:"Продажи",title:"Квалификация входящих лидов",desc:"Заявка с формы → агент собирает инфо по компании, сверяет с ICP, ставит оценку и раздаёт менеджерам. Время до первого контакта -60-70%.",status:"idea"},
+  {n:"02",dept:"Продажи",title:"Персонализация холодных писем",desc:"Агент читает новости каждой компании из списка и пишет индивидуальную первую строчку. Отклик в 2-3 раза выше шаблонов.",status:"idea"},
+  {n:"03",dept:"Продажи",title:"Дозаполнение CRM",desc:"Следит за CRM, дозаполняет размер компании, отрасль, стек, инвестиции, соцсети. Экономит 5-10 часов в неделю отделу.",status:"idea"},
+  {n:"04",dept:"Продажи",title:"Бриф перед встречей",desc:"Одностраничная справка перед звонком: компания, новости, история, возражения. Подготовка за 30 сек вместо 15 минут.",status:"idea"},
+  {n:"05",dept:"Продажи",title:"Черновик КП",desc:"Менеджер вбивает детали — агент собирает полное КП по шаблону с ценами. С 2 часов до 15 минут.",status:"idea"},
+  {n:"06",dept:"Продажи",title:"Разбор выигранных/проваленных сделок",desc:"Ищет паттерны в закрытых сделках: чек, цикл, конкуренты, возражения. Раз в месяц — отчёт почему выигрываем/сливаем.",status:"idea"},
+  {n:"07",dept:"Продажи",title:"Серия писем после встречи",desc:"Черновик следующего письма со ссылками на моменты разговора и релевантные кейсы. «Забыл вернуться» больше не существует.",status:"idea"},
+  {n:"08",dept:"Продажи",title:"Ответы на возражения про конкурентов",desc:"Клиент упомянул конкурента — агент подтягивает свежую инфо и подсказывает, чем бить по слабым местам.",status:"idea"},
+  {n:"09",dept:"Продажи",title:"Мониторинг воронки",desc:"Каждый день сканирует воронку: зависшие сделки, без след. шага, риски. Предупреждает до того, как сделка развалится.",status:"idea"},
+  {n:"10",dept:"Продажи",title:"Расчёт КП",desc:"Применяет правила ценообразования, считает скидки по размеру — готовое предложение. Убирает ошибки, часы → минуты.",status:"idea"},
+  // Маркетинг
+  {n:"11",dept:"Маркетинг",title:"Переупаковка контента",desc:"Из одной статьи: тред в X, пост в LinkedIn, email, подпись в IG, 3 поста в соцсети. 7+ единиц контента из одного материала.",status:"done",stack:"content-writer-dna, threads-creator, youtube-scenario",client:"ДНК Эксперта"},
+  {n:"12",dept:"Маркетинг",title:"Бриф для SEO-статьи",desc:"Разбирает топ выдачи, находит пробелы, собирает бриф для автора: объём, структура, подтемы, внутренние ссылки.",status:"idea"},
+  {n:"13",dept:"Маркетинг",title:"Упоминания в соцсетях",desc:"Раз в день сводка: где хвалят, где ругают, тренды, на что ответить.",status:"idea"},
+  {n:"14",dept:"Маркетинг",title:"Разбор email-рассылок",desc:"После рассылки — цифры, сравнение с нормой, что сработало, что поменять.",status:"done",stack:"analytics-weekly",client:"ДНК Эксперта"},
+  {n:"15",dept:"Маркетинг",title:"Первый черновик статьи",desc:"По брифу + стилю компании — полный черновик. Авторы тратят на него -60% времени, остальное идёт на редактуру.",status:"idea"},
+  {n:"16",dept:"Маркетинг",title:"Варианты рекламных текстов",desc:"10-20 вариантов под A/B: разные заголовки, описания, CTA.",status:"idea"},
+  {n:"17",dept:"Маркетинг",title:"Трекер конкурентов",desc:"Раз в неделю — отчёт: что выпустили, темы закрытые и открытые. Открытые — ваши возможности.",status:"done",stack:"competitor-research, researcher-dna",client:"ДНК Эксперта"},
+  {n:"18",dept:"Маркетинг",title:"Письма после конференций/вебинаров",desc:"Делит участников по вовлечённости, пишет персональные письма под каждую группу.",status:"wip",stack:"warmup-editor",client:"ДНК Эксперта",result:"частично"},
+  {n:"19",dept:"Маркетинг",title:"Работа с отзывами",desc:"Мониторит отзывы, NPS, поддержку. Позитив → доводит до публикуемого вида и раскладывает по сценариям для маркетинга.",status:"wip",stack:"meeting-secretary + ручной разбор",client:"ДНК Эксперта",result:"частично"},
+  {n:"20",dept:"Маркетинг",title:"Оптимизация лендинга",desc:"Смотрит аналитику, находит слабые блоки, предлагает альтернативные тексты с рекомендациями что тестировать.",status:"idea"},
+  // Поддержка
+  {n:"21",dept:"Поддержка",title:"Автоответчик на типовые вопросы",desc:"Закрывает 40-60% тикетов сам по документации. Сложное — живому с полным контекстом.",status:"idea"},
+  {n:"22",dept:"Поддержка",title:"Сортировка тикетов",desc:"Тип, важность, часть продукта → нужному специалисту. Среднее время ответа падает.",status:"idea"},
+  {n:"23",dept:"Поддержка",title:"Пробелы в базе знаний",desc:"Раз в неделю: какие вопросы задают, а ответа нет. По каждому пробелу — черновик статьи.",status:"idea"},
+  {n:"24",dept:"Поддержка",title:"Мониторинг настроения",desc:"Обрабатывает тикеты, отзывы, NPS. Еженедельный отчёт, тренды, негатив всплывает заранее.",status:"idea"},
+  {n:"25",dept:"Поддержка",title:"Сводка при эскалации",desc:"При передаче тикета старшему — полный расклад: проблема, что пробовали, клиент, совет. Вместо треда из 20 сообщений.",status:"idea"},
+  {n:"26",dept:"Поддержка",title:"Упреждающее обнаружение проблем",desc:"Следит за логами/метриками. Начало сбоить — черновик проактивного сообщения клиентам до того, как они напишут.",status:"idea"},
+  {n:"27",dept:"Поддержка",title:"QA ответов поддержки",desc:"Каждый день 10% выборка ответов операторов — точность, тон, полнота. Обратная связь руководителям.",status:"idea"},
+  {n:"28",dept:"Поддержка",title:"Снижение нагрузки self-service",desc:"Находит обращения, которые можно закрыть справкой. Советует, что дописать в FAQ.",status:"idea"},
+  // Операционка
+  {n:"29",dept:"Операционка",title:"Обработка счетов",desc:"PDF/email/фото → поставщик, сумма, позиции, срок. В бухгалтерию, с пометками расхождений.",status:"idea"},
+  {n:"30",dept:"Операционка",title:"Отчёты по чекам",desc:"Фото чеков → поставщик, сумма, дата, категория. Готовый отчёт с проверкой по политике.",status:"idea"},
+  {n:"31",dept:"Операционка",title:"Заметки со встреч",desc:"Запись/расшифровка → структура: задачи, решения, вопросы, ответственные. Авторассылка участникам.",status:"done",stack:"meeting-secretary, transcripts pipeline",client:"ДНК Эксперта"},
+  {n:"32",dept:"Операционка",title:"Раскладка документов",desc:"Договоры/КП/отчёты автоматически размечаются, переименовываются, раскладываются по папкам.",status:"idea",result:"Apple Notes дамп (287) ждёт разбора"},
+  {n:"33",dept:"Операционка",title:"Онбординг сотрудников",desc:"Новый сотрудник → персональный чеклист, задачи на знакомство, приветственные письма, трекинг.",status:"idea",result:"под Марианну/монтажёра/дизайнера"},
+  {n:"34",dept:"Операционка",title:"Сравнение поставщиков",desc:"Собирает по вендорам: цены, функции, отзывы, кейсы. Единый сравнительный документ. -70% времени.",status:"idea"},
+  {n:"35",dept:"Операционка",title:"Проверка договоров",desc:"Читает договоры: нестандартные пункты, отсутствующие защиты, риски. Объясняет, что показать юристу.",status:"idea"},
+  {n:"36",dept:"Операционка",title:"Еженедельный KPI-дашборд",desc:"Тянет данные из источников, считает метрики, сравнивает с планом. Оформленный дашборд с разбором трендов.",status:"wip",stack:"analytics-weekly (основа)",client:"ДНК Эксперта",result:"база заложена"},
+  {n:"37",dept:"Операционка",title:"Склад",desc:"Остатки ниже критического уровня → сколько и когда дозаказать с учётом сроков и цен.",status:"idea"},
+  {n:"38",dept:"Операционка",title:"Описание процессов",desc:"Наблюдает за работой, документирует шаги, собирает инструкцию. Подсказывает, что автоматизировать дальше.",status:"done",stack:"knowledge/ + playbooks",client:"ДНК Эксперта"},
+  // HR
+  {n:"39",dept:"HR",title:"Отсев резюме",desc:"Сверяет резюме с требованиями, оценивает опыт/навыки/квалификацию. Отсортированный список с обоснованием.",status:"idea"},
+  {n:"40",dept:"HR",title:"Описания вакансий",desc:"HR вбивает требования → полное описание в стиле компании под площадку (LinkedIn/сайт/джоб-борд).",status:"idea"},
+  {n:"41",dept:"HR",title:"Вопросы для интервью",desc:"Под конкретного кандидата: что уточнить, культурное соответствие, технические навыки.",status:"idea"},
+  {n:"42",dept:"HR",title:"Оценка сотрудника",desc:"Заметки руководителя + самооценка → структурированный документ: сильные стороны, зоны роста, цели.",status:"idea"},
+  {n:"43",dept:"HR",title:"FAQ-бот для сотрудников",desc:"Политики, льготы, отпуска, расходы — по корпоративному справочнику. Закрывает 60-80% HR-вопросов.",status:"idea"},
+  {n:"44",dept:"HR",title:"Разбор выходных интервью",desc:"Расшифровки по уволившимся → повторяющиеся темы, признаки риска ухода, рекомендации.",status:"idea"},
+  {n:"45",dept:"HR",title:"Проверка зарплат по рынку",desc:"Рыночные данные под локацию и уровень. Адекватная вилка с обоснованием.",status:"idea"},
+  // Финансы
+  {n:"46",dept:"Финансы",title:"Прогноз кеш-флоу",desc:"История, дебиторка, кредиторка, регулярные расходы → прогноз на 30/60/90 дней со сценариями.",status:"idea"},
+  {n:"47",dept:"Финансы",title:"Отклонения от бюджета",desc:"Месяц: факт vs план. Категории с расхождениями, возможные причины, что скорректировать.",status:"idea"},
+  {n:"48",dept:"Финансы",title:"Объяснение финансовых отчётов",desc:"Сырые выписки → человеческий рассказ: что произошло, почему важно, на что смотреть дальше. Для совета директоров за минуты.",status:"idea"},
+  {n:"49",dept:"Финансы",title:"Подготовка к налогам",desc:"Годовой массив чеков/счетов → по налоговым категориям, помечает что не хватает, сводка бухгалтеру.",status:"idea"},
+  {n:"50",dept:"Финансы",title:"Аудит подписок",desc:"Сканирует повторяющиеся подписки. Находит неиспользуемые, считает сумму, рекомендует что отменить.",status:"idea",result:"личный вопрос Антона"}
+];
+
+const STATUS_META = {
+  done: {label:"✓ done", bg:"bg-emerald-100", text:"text-emerald-800"},
+  wip:  {label:"◐ wip",  bg:"bg-amber-100",   text:"text-amber-800"},
+  idea: {label:"○ idea", bg:"bg-slate-100",   text:"text-slate-500"}
+};
+
+const state = { status: "all", dept: "all" };
+
+function render() {
+  const grid = document.getElementById("grid");
+  const tpl = document.getElementById("card-tpl");
+  grid.innerHTML = "";
+  const filtered = IDEAS.filter(i =>
+    (state.status === "all" || i.status === state.status) &&
+    (state.dept === "all" || i.dept === state.dept)
+  );
+  document.getElementById("empty").classList.toggle("hidden", filtered.length > 0);
+  filtered.forEach(i => {
+    const el = tpl.content.cloneNode(true);
+    const card = el.querySelector(".card");
+    card.querySelector(".font-mono").textContent = "#" + i.n;
+    const badge = card.querySelector(".status-badge");
+    const meta = STATUS_META[i.status];
+    badge.textContent = meta.label;
+    badge.classList.add(meta.bg, meta.text);
+    card.querySelector(".dept-label").textContent = i.dept;
+    card.querySelector("h3").textContent = i.title;
+    card.querySelector(".desc").textContent = i.desc;
+    if (i.stack || i.client || i.result) {
+      card.querySelector(".meta").classList.remove("hidden");
+      if (i.stack) { card.querySelector(".stack-row").classList.remove("hidden"); card.querySelector(".stack-val").textContent = i.stack; }
+      if (i.client) { card.querySelector(".client-row").classList.remove("hidden"); card.querySelector(".client-val").textContent = i.client; }
+      if (i.result) { card.querySelector(".result-row").classList.remove("hidden"); card.querySelector(".result-val").textContent = i.result; }
+    }
+    grid.appendChild(el);
+  });
+}
+
+function updateStats() {
+  document.getElementById("stat-done").textContent = IDEAS.filter(i => i.status === "done").length;
+  document.getElementById("stat-wip").textContent = IDEAS.filter(i => i.status === "wip").length;
+  document.getElementById("stat-idea").textContent = IDEAS.filter(i => i.status === "idea").length;
+}
+
+function bindFilters(groupId, field) {
+  const group = document.getElementById(groupId);
+  group.addEventListener("click", e => {
+    const btn = e.target.closest("button");
+    if (!btn) return;
+    state[field] = btn.dataset.value;
+    group.querySelectorAll("button").forEach(b => {
+      const active = b.dataset.value === state[field];
+      b.classList.toggle("bg-slate-900", active);
+      b.classList.toggle("text-white", active);
+      b.classList.toggle("bg-slate-100", !active);
+      b.classList.toggle("text-slate-700", !active && field === "status");
+      b.classList.toggle("text-slate-600", !active && field === "dept");
+    });
+    render();
+  });
+}
+
+document.getElementById("updated").textContent = new Date().toLocaleDateString("ru-RU", {day:"2-digit",month:"2-digit",year:"numeric"});
+updateStats();
+bindFilters("status-filters", "status");
+bindFilters("dept-filters", "dept");
+render();
+</script>
+
+</body>
+</html>
