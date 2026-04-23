@@ -53,24 +53,27 @@
   </div>
 </nav>
 
-<main class="max-w-4xl mx-auto p-3 sm:p-5">
-  <div id="grid" class="grid grid-cols-1 sm:grid-cols-2 gap-3"></div>
+<main class="max-w-4xl mx-auto p-2 sm:p-4">
+  <div id="grid" class="bg-white rounded-xl border border-slate-200 overflow-hidden divide-y divide-slate-100"></div>
   <div id="empty" class="hidden text-center text-slate-400 py-16 text-sm">Ничего не найдено по фильтрам</div>
 </main>
 
 <template id="card-tpl">
-  <article class="card bg-white rounded-xl border border-slate-200 p-4 cursor-pointer">
-    <div class="flex items-center justify-between text-xs mb-2">
-      <span class="font-mono text-slate-400"></span>
-      <span class="status-badge px-2 py-0.5 rounded-full text-xs font-medium"></span>
+  <article class="row cursor-pointer">
+    <div class="row-head flex items-center gap-3 px-4 py-2.5 hover:bg-slate-50 active:bg-slate-100">
+      <span class="status-dot w-2 h-2 rounded-full shrink-0"></span>
+      <span class="font-mono text-xs text-slate-400 shrink-0 w-6"></span>
+      <span class="title-text flex-1 text-sm text-slate-800 leading-snug truncate"></span>
+      <span class="dept-label text-[10px] uppercase tracking-wide text-slate-400 shrink-0 hidden sm:inline"></span>
+      <span class="chevron text-slate-300 text-xs shrink-0">▸</span>
     </div>
-    <div class="dept-label text-xs text-slate-500 uppercase tracking-wide mb-1"></div>
-    <h3 class="font-semibold text-slate-900 leading-tight mb-3"></h3>
-    <p class="desc text-sm text-slate-600 leading-relaxed mb-3"></p>
-    <div class="meta hidden border-t border-slate-100 pt-3 space-y-1 text-xs text-slate-500">
-      <div class="flex gap-1 flex-wrap stack-row hidden"><span class="text-slate-400">Стек:</span><span class="stack-val text-slate-700"></span></div>
-      <div class="flex gap-1 client-row hidden"><span class="text-slate-400">Клиент:</span><span class="client-val text-slate-700"></span></div>
-      <div class="flex gap-1 result-row hidden"><span class="text-slate-400">Результат:</span><span class="result-val text-slate-700"></span></div>
+    <div class="row-body hidden px-4 pb-3 pt-1 bg-slate-50/60">
+      <p class="desc text-sm text-slate-600 leading-relaxed mb-2"></p>
+      <div class="meta hidden space-y-0.5 text-xs text-slate-500">
+        <div class="stack-row hidden"><span class="text-slate-400">Стек: </span><span class="stack-val text-slate-700"></span></div>
+        <div class="client-row hidden"><span class="text-slate-400">Клиент: </span><span class="client-val text-slate-700"></span></div>
+        <div class="result-row hidden"><span class="text-slate-400">Результат: </span><span class="result-val text-slate-700"></span></div>
+      </div>
     </div>
   </article>
 </template>
@@ -136,9 +139,9 @@ const IDEAS = [
 ];
 
 const STATUS_META = {
-  done: {label:"✓ done", bg:"bg-emerald-100", text:"text-emerald-800"},
-  wip:  {label:"◐ wip",  bg:"bg-amber-100",   text:"text-amber-800"},
-  idea: {label:"○ idea", bg:"bg-slate-100",   text:"text-slate-500"}
+  done: {dot:"bg-emerald-500"},
+  wip:  {dot:"bg-amber-400"},
+  idea: {dot:"bg-slate-300"}
 };
 
 const state = { status: "all", dept: "all" };
@@ -154,21 +157,28 @@ function render() {
   document.getElementById("empty").classList.toggle("hidden", filtered.length > 0);
   filtered.forEach(i => {
     const el = tpl.content.cloneNode(true);
-    const card = el.querySelector(".card");
-    card.querySelector(".font-mono").textContent = "#" + i.n;
-    const badge = card.querySelector(".status-badge");
-    const meta = STATUS_META[i.status];
-    badge.textContent = meta.label;
-    badge.classList.add(meta.bg, meta.text);
-    card.querySelector(".dept-label").textContent = i.dept;
-    card.querySelector("h3").textContent = i.title;
-    card.querySelector(".desc").textContent = i.desc;
+    const row = el.querySelector(".row");
+    row.querySelector(".status-dot").classList.add(STATUS_META[i.status].dot);
+    row.querySelector(".font-mono").textContent = i.n;
+    row.querySelector(".title-text").textContent = i.title;
+    row.querySelector(".dept-label").textContent = i.dept;
+    row.querySelector(".desc").textContent = i.desc;
     if (i.stack || i.client || i.result) {
-      card.querySelector(".meta").classList.remove("hidden");
-      if (i.stack) { card.querySelector(".stack-row").classList.remove("hidden"); card.querySelector(".stack-val").textContent = i.stack; }
-      if (i.client) { card.querySelector(".client-row").classList.remove("hidden"); card.querySelector(".client-val").textContent = i.client; }
-      if (i.result) { card.querySelector(".result-row").classList.remove("hidden"); card.querySelector(".result-val").textContent = i.result; }
+      row.querySelector(".meta").classList.remove("hidden");
+      if (i.stack) { row.querySelector(".stack-row").classList.remove("hidden"); row.querySelector(".stack-val").textContent = i.stack; }
+      if (i.client) { row.querySelector(".client-row").classList.remove("hidden"); row.querySelector(".client-val").textContent = i.client; }
+      if (i.result) { row.querySelector(".result-row").classList.remove("hidden"); row.querySelector(".result-val").textContent = i.result; }
     }
+    const head = row.querySelector(".row-head");
+    const body = row.querySelector(".row-body");
+    const chevron = row.querySelector(".chevron");
+    head.addEventListener("click", () => {
+      const open = !body.classList.contains("hidden");
+      body.classList.toggle("hidden", open);
+      chevron.textContent = open ? "▸" : "▾";
+      chevron.classList.toggle("text-slate-300", open);
+      chevron.classList.toggle("text-slate-500", !open);
+    });
     grid.appendChild(el);
   });
 }
