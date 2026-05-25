@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#FBF8F3">
+<title>Кейсы по нишам · Банк автоматизаций</title>
+<meta property="og:title" content="Кейсы автоматизации по нишам бизнеса">
+<meta property="og:description" content="Реальные кейсы автоматизации из 53 каналов рынка. Стоматология, фитнес, e-commerce и десятки других ниш.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📓%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..900,0..100&family=Geist:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+  :root {
+    --paper: #FBF8F3;
+    --paper-dark: #F0EBE0;
+    --ink: #1A1815;
+    --ink-soft: #3F3B35;
+    --muted: #8A8580;
+    --line: #D9D2C5;
+    --accent: #2B4FFF;
+    --accent-soft: #E8ECFF;
+    --warn: #FF4D1A;
+  }
+
+  * { -webkit-tap-highlight-color: transparent; }
+
+  html, body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Geist', system-ui, sans-serif;
+    font-feature-settings: 'ss01', 'cv11';
+  }
+
+  .font-display {
+    font-family: 'Fraunces', Georgia, serif;
+    font-variation-settings: 'SOFT' 30, 'opsz' 144;
+    letter-spacing: -0.02em;
+  }
+  .font-mono { font-family: 'JetBrains Mono', monospace; }
+
+  /* Paper grain texture */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.4;
+    background-image:
+      radial-gradient(circle at 20% 30%, rgba(26,24,21,0.025) 0, transparent 50%),
+      radial-gradient(circle at 80% 70%, rgba(43,79,255,0.02) 0, transparent 50%);
+    mix-blend-mode: multiply;
+  }
+
+  .ruled { border-top: 1px solid var(--line); }
+  .ruled-dashed { border-top: 1px dashed var(--line); }
+
+  /* Niche pill */
+  .niche-pill {
+    transition: all 0.18s cubic-bezier(0.2, 0.8, 0.2, 1);
+    border: 1px solid var(--line);
+    background: var(--paper);
+  }
+  .niche-pill:hover {
+    border-color: var(--ink);
+    transform: translateY(-1px);
+  }
+  .niche-pill.active {
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+  }
+  .niche-pill .count {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--muted);
+  }
+  .niche-pill.active .count { color: var(--paper-dark); }
+
+  /* Case card */
+  .case {
+    background: var(--paper);
+    border-top: 1px solid var(--line);
+    transition: background 0.2s ease;
+    position: relative;
+  }
+  .case:hover { background: var(--paper-dark); }
+  .case::after {
+    content: '';
+    position: absolute;
+    left: 0; top: -1px;
+    width: 0; height: 2px;
+    background: var(--accent);
+    transition: width 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  .case:hover::after { width: 100%; }
+
+  .case-result {
+    font-family: 'Fraunces', Georgia, serif;
+    font-variation-settings: 'SOFT' 50, 'opsz' 144;
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    line-height: 0.95;
+    color: var(--ink);
+  }
+
+  /* CTA button */
+  .cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--accent);
+    color: white;
+    padding: 0.625rem 1rem;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+  }
+  .cta:hover {
+    background: var(--ink);
+    transform: translateX(2px);
+  }
+  .cta .arrow { transition: transform 0.2s ease; }
+  .cta:hover .arrow { transform: translateX(3px); }
+
+  /* Tool chip */
+  .tool {
+    display: inline-block;
+    padding: 0.2rem 0.55rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--ink-soft);
+    background: var(--paper-dark);
+    border-radius: 4px;
+    margin: 0 0.25rem 0.25rem 0;
+    border: 1px solid var(--line);
+  }
+
+  /* Tag chip */
+  .tag {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    font-size: 0.72rem;
+    color: var(--muted);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    margin: 0 0.25rem 0.25rem 0;
+  }
+
+  /* Big hero stat */
+  .hero-stat {
+    font-variation-settings: 'SOFT' 80, 'opsz' 144;
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    line-height: 0.85;
+  }
+
+  /* Source link */
+  .source {
+    color: var(--muted);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--muted);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    transition: color 0.15s ease;
+  }
+  .source:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+  /* Search */
+  .search {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--line);
+    padding: 0.5rem 0;
+    font-family: 'Geist', sans-serif;
+    font-size: 1rem;
+    color: var(--ink);
+    width: 100%;
+    outline: none;
+    transition: border-color 0.2s ease;
+  }
+  .search:focus { border-color: var(--ink); }
+  .search::placeholder { color: var(--muted); }
+
+  /* Reveal animation */
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .rise { animation: rise 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+
+  /* Score indicator */
+  .score-dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-right: 4px;
+  }
+  .score-10, .score-9 { background: #16A34A; }
+  .score-8 { background: #65A30D; }
+  .score-7 { background: #CA8A04; }
+
+  /* Empty state */
+  .empty {
+    text-align: center;
+    padding: 4rem 1rem;
+    color: var(--muted);
+    font-family: 'Fraunces', Georgia, serif;
+    font-style: italic;
+  }
+
+  /* Responsive layout */
+  @media (max-width: 640px) {
+    .case-result { font-size: 2.5rem; }
+  }
+</style>
+</head>
+<body class="min-h-screen">
+
+<!-- Top metabar -->
+<div class="ruled-dashed" style="border-top: 0; border-bottom: 1px dashed var(--line);">
+  <div class="max-w-6xl mx-auto px-5 py-3 flex items-center justify-between text-xs font-mono" style="color: var(--muted);">
+    <a href="./" class="hover:text-current transition-colors" style="color: var(--ink-soft);">← Банк автоматизаций</a>
+    <span>VOL. 1 · <span id="meta-date">2026</span></span>
+  </div>
+</div>
+
+<!-- Masthead -->
+<header class="px-5 pt-12 pb-8 md:pt-20 md:pb-14 relative" style="z-index: 1;">
+  <div class="max-w-6xl mx-auto">
+    <div class="font-mono text-xs uppercase tracking-widest mb-4" style="color: var(--accent);">
+      The Automation Journal · Ежедневный обзор
+    </div>
+    <h1 class="font-display font-black leading-none text-5xl md:text-7xl lg:text-8xl rise">
+      Кейсы<br>
+      <span style="font-style: italic; font-variation-settings: 'SOFT' 100, 'opsz' 144;">по&nbsp;нишам</span>
+      <span class="hero-stat block md:inline" style="font-size: 0.4em; color: var(--muted); font-style: normal;">
+        бизнеса
+      </span>
+    </h1>
+
+    <p class="mt-6 md:mt-8 font-display text-xl md:text-2xl max-w-2xl leading-snug" style="color: var(--ink-soft); font-variation-settings: 'SOFT' 30, 'opsz' 24;">
+      Каждый день агент читает <b>53 канала</b> и собирает реальные кейсы автоматизации. Без воды, теории и продающих сторителлингов — только что работает в конкретной нише.
+    </p>
+
+    <div class="mt-10 grid grid-cols-3 gap-4 md:gap-8 max-w-2xl">
+      <div>
+        <div class="hero-stat text-4xl md:text-6xl" id="stat-cases">—</div>
+        <div class="font-mono text-xs uppercase mt-2" style="color: var(--muted);">Кейсов всего</div>
+      </div>
+      <div>
+        <div class="hero-stat text-4xl md:text-6xl" id="stat-niches">—</div>
+        <div class="font-mono text-xs uppercase mt-2" style="color: var(--muted);">Ниш</div>
+      </div>
+      <div>
+        <div class="hero-stat text-4xl md:text-6xl" id="stat-fresh">—</div>
+        <div class="font-mono text-xs uppercase mt-2" style="color: var(--muted);">За 7 дней</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Filter section -->
+<section class="sticky top-0 z-20 backdrop-blur-md" style="background: rgba(251,248,243,0.92); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);">
+  <div class="max-w-6xl mx-auto px-5 py-4">
+    <div class="grid md:grid-cols-[1fr_auto] gap-4 items-end">
+      <div>
+        <label class="font-mono text-xs uppercase tracking-widest block mb-1" style="color: var(--muted);">Поиск</label>
+        <input id="search" class="search" placeholder="стоматология, чатбот, n8n, запись...">
+      </div>
+      <div class="font-mono text-xs" style="color: var(--muted);">
+        <span id="result-count">0</span> совпадений
+      </div>
+    </div>
+
+    <div class="mt-4 flex flex-wrap gap-2" id="niche-filters">
+      <button class="niche-pill active px-3 py-1.5 rounded-full text-sm" data-niche="all">
+        Все <span class="count" data-count-all>0</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Cases feed -->
+<main id="feed" class="max-w-6xl mx-auto px-5 relative" style="z-index: 1;">
+  <div class="empty" id="loading">Подгружаю кейсы…</div>
+</main>
+
+<!-- Footer CTA -->
+<section class="mt-16 px-5 py-16 ruled" style="background: var(--ink); color: var(--paper);">
+  <div class="max-w-4xl mx-auto text-center">
+    <div class="font-mono text-xs uppercase tracking-widest mb-4" style="color: var(--paper-dark); opacity: 0.6;">
+      Не нашли кейс в своей нише?
+    </div>
+    <h2 class="font-display text-3xl md:text-5xl font-black mb-6" style="font-variation-settings: 'SOFT' 30, 'opsz' 144;">
+      Напишите —<br>
+      <span style="color: #6B83FF;">соберём под вас</span>
+    </h2>
+    <p class="font-display text-xl mb-8 max-w-2xl mx-auto" style="color: var(--paper-dark); opacity: 0.85; font-variation-settings: 'SOFT' 30, 'opsz' 24;">
+      Запускаем автоматизации и ИИ-сотрудников за 2 недели. Растят выручку, режут затраты.
+    </p>
+    <a href="https://t.me/AntonBezhin" class="inline-flex items-center gap-2 bg-white px-6 py-3 rounded-full font-semibold transition-transform hover:scale-105" style="color: var(--ink);">
+      Написать в Telegram
+      <span>→</span>
+    </a>
+  </div>
+</section>
+
+<footer class="px-5 py-6 ruled-dashed">
+  <div class="max-w-6xl mx-auto text-xs font-mono flex flex-wrap justify-between gap-3" style="color: var(--muted);">
+    <span>© 2026 Антон Бежин · ИП</span>
+    <span>Обновлено: <span id="meta-updated">—</span></span>
+  </div>
+</footer>
+
+<script>
+const TG_LINK = 'https://t.me/AntonBezhin';
+const DATA_URL = './automations.json';
+let CASES = [];
+let activeNiche = 'all';
+let searchQuery = '';
+
+const $ = s => document.querySelector(s);
+const $$ = s => document.querySelectorAll(s);
+
+function escape(s) {
+  return String(s || '').replace(/[&<>"']/g, c => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  }[c]));
+}
+
+function extractResultHighlight(result) {
+  if (!result) return null;
+  // Ищем процент, число с % или конкретные метрики
+  const m = result.match(/([−\-+]?\s*\d+([.,]\d+)?\s*[%×x]?)/);
+  return m ? m[1].replace(/\s/g, '') : null;
+}
+
+function pluralRu(n, forms) {
+  const a = Math.abs(n) % 100;
+  const b = a % 10;
+  if (a > 10 && a < 20) return forms[2];
+  if (b > 1 && b < 5) return forms[1];
+  if (b === 1) return forms[0];
+  return forms[2];
+}
+
+function renderNicheFilters() {
+  const counts = {};
+  CASES.forEach(c => {
+    counts[c.niche] = (counts[c.niche] || 0) + 1;
+  });
+  const sortedNiches = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+
+  const container = $('#niche-filters');
+  // Сохраняем "Все"
+  const allBtn = container.querySelector('[data-niche="all"]');
+  allBtn.querySelector('.count').textContent = CASES.length;
+  container.innerHTML = '';
+  container.appendChild(allBtn);
+
+  sortedNiches.forEach(([niche, count]) => {
+    const btn = document.createElement('button');
+    btn.className = 'niche-pill px-3 py-1.5 rounded-full text-sm';
+    btn.dataset.niche = niche;
+    btn.innerHTML = `${escape(niche)} <span class="count">${count}</span>`;
+    btn.onclick = () => {
+      activeNiche = niche;
+      $$('.niche-pill').forEach(p => p.classList.toggle('active', p.dataset.niche === niche));
+      renderFeed();
+    };
+    container.appendChild(btn);
+  });
+
+  allBtn.onclick = () => {
+    activeNiche = 'all';
+    $$('.niche-pill').forEach(p => p.classList.toggle('active', p.dataset.niche === 'all'));
+    renderFeed();
+  };
+}
+
+function caseHTML(c, index) {
+  const highlight = extractResultHighlight(c.result);
+  const tools = (c.tools || []).slice(0, 5).map(t => `<span class="tool">${escape(t)}</span>`).join('');
+  const tags = (c.tags || []).slice(0, 4).map(t => `<span class="tag">${escape(t)}</span>`).join('');
+  const score = c.relevance_score || 7;
+
+  const ctaText = encodeURIComponent(`Антон, привет. Видел кейс "${c.title}" в нише "${c.niche}". Хочу обсудить похожее для своего бизнеса.`);
+  const ctaLink = `${TG_LINK}?text=${ctaText}`;
+
+  return `
+    <article class="case py-10 md:py-14 grid md:grid-cols-[200px_1fr] gap-6 md:gap-10 rise" style="animation-delay: ${Math.min(index, 8) * 60}ms;">
+      <div class="md:text-right">
+        ${highlight ? `<div class="case-result text-5xl md:text-7xl">${escape(highlight)}</div>` : '<div class="font-mono text-xs uppercase" style="color: var(--muted);">Кейс</div>'}
+        <div class="font-mono text-xs uppercase tracking-widest mt-3" style="color: var(--accent);">
+          ${escape(c.niche)}
+        </div>
+        <div class="font-mono text-[0.65rem] mt-2" style="color: var(--muted);">
+          <span class="score-dot score-${score}"></span>${score}/10 · ${escape(c.added_date || '')}
+        </div>
+      </div>
+
+      <div>
+        <h3 class="font-display text-2xl md:text-3xl font-bold leading-tight mb-3" style="font-variation-settings: 'SOFT' 30, 'opsz' 144;">
+          ${escape(c.title)}
+        </h3>
+        <p class="text-base md:text-lg leading-relaxed mb-4" style="color: var(--ink-soft);">
+          ${escape(c.description)}
+        </p>
+        ${c.result && highlight === null ? `<p class="font-mono text-sm mb-4 italic" style="color: var(--ink);">→ ${escape(c.result)}</p>` : ''}
+        ${c.result && highlight ? `<p class="text-sm mb-4" style="color: var(--ink-soft);">${escape(c.result)}</p>` : ''}
+
+        <div class="mb-4">${tools}</div>
+        <div class="mb-6">${tags}</div>
+
+        <div class="flex flex-wrap items-center gap-4">
+          <a href="${ctaLink}" target="_blank" class="cta">
+            Хочу такое же <span class="arrow">→</span>
+          </a>
+          ${c.source_url ? `<a href="${escape(c.source_url)}" target="_blank" class="source">источник · ${escape(c.source_chat || 'TG')}</a>` : ''}
+        </div>
+      </div>
+    </article>
+  `;
+}
+
+function renderFeed() {
+  let filtered = CASES;
+  if (activeNiche !== 'all') {
+    filtered = filtered.filter(c => c.niche === activeNiche);
+  }
+  if (searchQuery) {
+    const q = searchQuery.toLowerCase();
+    filtered = filtered.filter(c => {
+      const haystack = [
+        c.niche, c.title, c.description, c.result,
+        ...(c.tools || []), ...(c.tags || [])
+      ].join(' ').toLowerCase();
+      return haystack.includes(q);
+    });
+  }
+
+  $('#result-count').textContent = filtered.length;
+  const feed = $('#feed');
+
+  if (filtered.length === 0) {
+    feed.innerHTML = `<div class="empty">Пока ничего по этому запросу. Агент работает каждый день — заглядывайте.</div>`;
+    return;
+  }
+
+  feed.innerHTML = filtered.map((c, i) => caseHTML(c, i)).join('');
+}
+
+async function load() {
+  try {
+    const resp = await fetch(DATA_URL, { cache: 'no-cache' });
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    const data = await resp.json();
+    CASES = Array.isArray(data) ? data : (data.cases || []);
+
+    // Метрики
+    $('#stat-cases').textContent = CASES.length;
+    const niches = new Set(CASES.map(c => c.niche));
+    $('#stat-niches').textContent = niches.size;
+    const weekAgo = new Date(Date.now() - 7 * 24 * 3600 * 1000).toISOString().slice(0, 10);
+    const fresh = CASES.filter(c => (c.added_date || '') >= weekAgo).length;
+    $('#stat-fresh').textContent = fresh;
+
+    $('#meta-updated').textContent = data.updated_at || '—';
+    $('#meta-date').textContent = new Date().toISOString().slice(0, 7);
+
+    renderNicheFilters();
+    renderFeed();
+  } catch (e) {
+    $('#feed').innerHTML = `
+      <div class="empty">
+        Банк пока пуст. Агент собирает первые кейсы — заглядывайте завтра.<br>
+        <span class="font-mono text-xs">${escape(e.message)}</span>
+      </div>
+    `;
+    $('#stat-cases').textContent = '0';
+    $('#stat-niches').textContent = '0';
+    $('#stat-fresh').textContent = '0';
+  }
+}
+
+$('#search').addEventListener('input', e => {
+  searchQuery = e.target.value.trim();
+  renderFeed();
+});
+
+load();
+</script>
+
+</body>
+</html>
