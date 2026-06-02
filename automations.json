@@ -1,7 +1,264 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-06-01",
+  "updated_at": "2026-06-02",
   "cases": [
+    {
+      "id": "e2d871647d",
+      "niche": "Онлайн-образование",
+      "niche_en": "online_education",
+      "title": "Воронка вебинаров с частыми запусками для продаж",
+      "description": "Компания запускает вебинары каждые 10 минут для продажи продуктов до 50 000 рублей. Конверсия в продажу 1-5% от подписчиков, 10-20% оплат происходят автоматически без менеджеров. На органическом трафике через воронку прошло 130 000 регистраций с доходимостью 50%.",
+      "tools": [
+        "Вебинарная платформа",
+        "Email-последовательности",
+        "CRM"
+      ],
+      "tags": [
+        "вебинары",
+        "воронка продаж",
+        "автоматизация оплат"
+      ],
+      "result": "Конверсия 1-5% в продажу, 10-20% автоматических оплат, 130 000 регистраций через воронку, доходимость 50%",
+      "relevance_score": 7,
+      "source_url": "https://t.me/c/3894415165/1624",
+      "source_chat": "CMO Chat",
+      "source_chat_id": 3894415165,
+      "source_msg_id": 1624,
+      "added_date": "2026-06-02"
+    },
+    {
+      "id": "a38f005eb5",
+      "niche": "Онлайн-образование",
+      "niche_en": "online_education",
+      "title": "Автоматизированный вебинар с встроенной оплатой и триггерами",
+      "description": "Компания запустила автовебинар, проводящийся каждые 10 минут с встроенной системой оплаты прямо на странице вебинара. Используются таймеры спикера, бонусы и триггеры для повышения конверсии. 80% пользователей совершают автооплату на чеке 20k.",
+      "tools": [
+        "Автовебинар платформа",
+        "система оплаты",
+        "видео с таймерами"
+      ],
+      "tags": [
+        "вебинар",
+        "автоматизация продаж",
+        "оплата",
+        "триггеры"
+      ],
+      "result": "ROMI 190-270% с РСЯ за 2,5 месяца, масштабирование трафика в процессе",
+      "relevance_score": 8,
+      "source_url": "https://t.me/c/3894415165/1613",
+      "source_chat": "CMO Chat",
+      "source_chat_id": 3894415165,
+      "source_msg_id": 1613,
+      "added_date": "2026-06-02"
+    },
+    {
+      "id": "4264df07c7",
+      "niche": "Онлайн-образование",
+      "niche_en": "online_education",
+      "title": "Оптимизация дневного бюджета в VK Ads для ускорения обучения алгоритма",
+      "description": "Онлайн-школа столкнулась с падением окупаемости на 74% при запуске кампаний в VK Ads с дневным лимитом 1000 ₽. Проблема: алгоритм получал слишком мало данных (2-3 лида в день при CPL 300-500 ₽) и медленно обучался. Решение: вместо размазывания бюджета на неделю, сконцентрировать 10000 ₽ в один день для быстрого обучения системы.",
+      "tools": [
+        "VK Ads"
+      ],
+      "tags": [
+        "лидген",
+        "VK Ads",
+        "оптимизация бюджета",
+        "алгоритмы"
+      ],
+      "result": "Падение ROMI с 0,8 до нормы происходит в разы быстрее при концентрированном бюджете вместо растянутого",
+      "relevance_score": 8,
+      "source_url": "https://t.me/Infobiznow/1446",
+      "source_chat": "НефтеТрафик про лидген",
+      "source_chat_id": 1542552403,
+      "source_msg_id": 1446,
+      "added_date": "2026-06-02"
+    },
+    {
+      "id": "7e74fba86d",
+      "niche": "E-commerce",
+      "niche_en": "ecommerce",
+      "title": "Автоматическая генерация рекламных текстов для продуктов через GPT-4",
+      "description": "Автоматизация в N8N собирает данные о продукте из Airtable, генерирует рекламные тексты через GPT-4 и отправляет результат в Slack. Триггер — заполнение формы, результат готов за 5 минут.",
+      "tools": [
+        "N8N",
+        "Airtable",
+        "GPT-4",
+        "Slack",
+        "Form Trigger"
+      ],
+      "tags": [
+        "генерация контента",
+        "AI",
+        "маркетинг",
+        "N8N"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/1050",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 1050,
+      "added_date": "2026-06-02"
+    },
+    {
+      "id": "557ab73347",
+      "niche": "Онлайн-образование для педагогов",
+      "niche_en": "online_education_teachers",
+      "title": "Лидген для курса педагогов через ВК: окупаемость х9,3 на ретаргете",
+      "description": "Агентство запустило рекламную кампанию курса для педагогов в ВКонтакте с бюджетом 100k₽. Использовали двухэтапную схему: сначала холодный трафик в Senler для сбора базы, затем ретаргетинг на собственную аудиторию. Ключевой инсайт: реклама на базу подписчиков дала 78% регистраций и окупаемость х9,3.",
+      "tools": [
+        "ВКонтакте",
+        "Senler",
+        "Facebook Ads (или VK Ads)"
+      ],
+      "tags": [
+        "лидген",
+        "ретаргетинг",
+        "образование",
+        "ВК"
+      ],
+      "result": "Бюджет 103k₽, цена регистрации 63₽, окупаемость х2,4 в целом. На ретаргете базы: 26k₽ бюджета, 21₽ за регистрацию, окупаемость х9,3. 100% выручки из базы подписчиков.",
+      "relevance_score": 9,
+      "source_url": "https://t.me/Infobiznow/1445",
+      "source_chat": "НефтеТрафик про лидген",
+      "source_chat_id": 1542552403,
+      "source_msg_id": 1445,
+      "added_date": "2026-06-01"
+    },
+    {
+      "id": "a7d4584559",
+      "niche": "B2B продажи",
+      "niche_en": "b2b_sales",
+      "title": "AI-агент для автоматизации лидогенерации и поиска клиентов",
+      "description": "Предприниматель создал AI-агента Hermes, который автоматически сканирует Telegram, Яндекс.Карты, 2ГИС и соцсети для поиска потенциальных клиентов. Агент собирает контакты, оценивает лиды по чек-листу (до 100 баллов) и отправляет горячих клиентов в отдел продаж. Обновляется каждую минуту.",
+      "tools": [
+        "AI-агент",
+        "Telegram API",
+        "Яндекс.Карты",
+        "2ГИС",
+        "YouTube API",
+        "Avito API"
+      ],
+      "tags": [
+        "лидогенерация",
+        "AI-агент",
+        "автоматизация продаж",
+        "парсинг"
+      ],
+      "result": "Отдел продаж получает готовый список горячих лидов вместо ручного поиска. Дополнительно агент анализирует конкурентов (100 каналов за вечер вместо недели), находит проблемы в собственных каналах, пишет код ботов по описанию",
+      "relevance_score": 8,
+      "source_url": "https://t.me/c/3685946261/208",
+      "source_chat": "КИБЕР-ШТАТ 2.0",
+      "source_chat_id": 3685946261,
+      "source_msg_id": 208,
+      "added_date": "2026-06-01"
+    },
+    {
+      "id": "d02c06efde",
+      "niche": "Электронная коммерция",
+      "niche_en": "ecommerce",
+      "title": "Автоматизация кросс-селла после покупки через JotForm и AI",
+      "description": "После заполнения формы в JotForm данные сохраняются в Google Sheets и Drive, обрабатываются AI Gemini, затем отправляется персонализированное письмо с предложением сопутствующих товаров. Увеличивает продажи через автоматический кросс-селл.",
+      "tools": [
+        "JotForm",
+        "Google Sheets",
+        "Google Drive",
+        "Gemini",
+        "Gmail",
+        "n8n"
+      ],
+      "tags": [
+        "кросс-селл",
+        "email-маркетинг",
+        "AI",
+        "post-purchase"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/1047",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 1047,
+      "added_date": "2026-06-01"
+    },
+    {
+      "id": "55022c4e57",
+      "niche": "Маркетинговые агентства",
+      "niche_en": "marketing_agencies",
+      "title": "Автоматизация ежемесячной отчетности с OpenAI и Google Docs",
+      "description": "Команда маркетинга автоматизировала создание ежемесячных отчетов о результатах кампаний. Workflow собирает данные из Sticky Note, обрабатывает их через OpenAI для анализа, генерирует отчет в Google Docs и отправляет ссылку в Slack. Запускается по расписанию без ручного вмешательства.",
+      "tools": [
+        "n8n",
+        "Sticky Note",
+        "OpenAI",
+        "Google Docs",
+        "Slack"
+      ],
+      "tags": [
+        "отчетность",
+        "OpenAI",
+        "расписание",
+        "документы"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/1045",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 1045,
+      "added_date": "2026-06-01"
+    },
+    {
+      "id": "e24b010f43",
+      "niche": "Управление проектами",
+      "niche_en": "project_management",
+      "title": "Автоматическое создание заметок в Notion из сообщений чата",
+      "description": "Автоматизация в N8N, которая реагирует на сообщения в чате, обрабатывает их через AI (Anthropic), извлекает ключевые моменты и создает структурированные цветные заметки в Notion. Подходит для команд, работающих с проектами и документацией.",
+      "tools": [
+        "N8N",
+        "Notion",
+        "Anthropic LM Chat",
+        "Chat Trigger"
+      ],
+      "tags": [
+        "Notion",
+        "AI",
+        "чат",
+        "заметки"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/1042",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 1042,
+      "added_date": "2026-06-01"
+    },
+    {
+      "id": "b7c233c762",
+      "niche": "Интернет-магазин",
+      "niche_en": "ecommerce",
+      "title": "Поиск товаров и заказов в боте через Google Sheets и NocoDB",
+      "description": "Настройка механики поиска в чат-боте для интернет-магазина. Пользователь вводит название товара или номер заказа, бот ищет данные в Google Sheets или NocoDB и выводит результат. Применимо для поиска товаров по модели и просмотра статуса заказа.",
+      "tools": [
+        "PuzzleBot",
+        "Google Sheets",
+        "NocoDB"
+      ],
+      "tags": [
+        "поиск",
+        "чат-бот",
+        "интеграция БД"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/wearepuzzlebot/1220",
+      "source_chat": "PuzzleBot :// Конструктор ботов и Мини-приложений",
+      "source_chat_id": 1420757506,
+      "source_msg_id": 1220,
+      "added_date": "2026-06-01"
+    },
     {
       "id": "c9dec235f7",
       "niche": "Лидогенерация",
@@ -79,6 +336,87 @@
       "added_date": "2026-05-31"
     },
     {
+      "id": "05b633936e",
+      "niche": "SaaS / Разработка ботов",
+      "niche_en": "saas_bot_development",
+      "title": "Агентный Telegram AI бот с контекстом на N8N",
+      "description": "Решение для создания интерактивного Telegram-бота с использованием OpenAI и N8N. Бот обрабатывает сообщения, сохраняет контекст беседы через Memory Buffer, отправляет ответы и может прикреплять файлы. Включает инструменты для HTTP-запросов и управления заметками.",
+      "tools": [
+        "N8N",
+        "OpenAI",
+        "Telegram API",
+        "Memory Buffer",
+        "Agent"
+      ],
+      "tags": [
+        "telegram",
+        "AI",
+        "агент",
+        "контекст"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/1039",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 1039,
+      "added_date": "2026-05-31"
+    },
+    {
+      "id": "88711c8e1b",
+      "niche": "Фриланс",
+      "niche_en": "freelance",
+      "title": "Автоматизация уведомлений о новых заказах Upwork в Slack",
+      "description": "Фрилансер получает сообщения от клиентов в Gmail, система автоматически извлекает ключевую информацию через AI (Google Gemini), отправляет уведомление в Slack и создаёт заметку с деталями задачи. Позволяет не пропустить важные заказы и быстро реагировать.",
+      "tools": [
+        "n8n",
+        "Gmail",
+        "Google Gemini",
+        "Slack",
+        "Information Extractor"
+      ],
+      "tags": [
+        "уведомления",
+        "Upwork",
+        "мессенджеры",
+        "AI"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/1037",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 1037,
+      "added_date": "2026-05-31"
+    },
+    {
+      "id": "6733cac4d0",
+      "niche": "Аналитика данных",
+      "niche_en": "data_analytics",
+      "title": "Автоматизированный анализ CSV через OpenAI в N8N",
+      "description": "Воркфлоу для обработки CSV-файлов из Google Sheets с помощью OpenAI. Бот анализирует данные, генерирует инсайты и сохраняет результаты. Применимо для аналитиков и маркетологов, которым нужно быстро обрабатывать результаты опросов и получать рекомендации.",
+      "tools": [
+        "N8N",
+        "OpenAI",
+        "Google Sheets",
+        "Chat Trigger",
+        "Memory Buffer Window"
+      ],
+      "tags": [
+        "анализ данных",
+        "OpenAI",
+        "Google Sheets",
+        "N8N"
+      ],
+      "result": "",
+      "relevance_score": 6,
+      "source_url": "https://t.me/N8N_automatisation/1035",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 1035,
+      "added_date": "2026-05-31"
+    },
+    {
       "id": "20bb33e808",
       "niche": "Грузоперевозки",
       "niche_en": "freight_logistics",
@@ -99,6 +437,59 @@
       "source_chat": "5815836336",
       "source_chat_id": 5815836336,
       "source_msg_id": 997924,
+      "added_date": "2026-05-30"
+    },
+    {
+      "id": "036b6a392c",
+      "niche": "Маркетинговое агентство",
+      "niche_en": "marketing_agency",
+      "title": "Мониторинг вовлеченности конкурентов через N8N и AI",
+      "description": "Автоматизация собирает данные о лайках и комментариях постов конкурентов в соцсетях через AI Agent, анализирует их и выгружает результаты в Google Sheets для сравнительного анализа. Позволяет маркетологам отслеживать активность конкурентов еженедельно без ручного сбора данных.",
+      "tools": [
+        "N8N",
+        "Google Sheets",
+        "OpenAI",
+        "MCP Client Tool"
+      ],
+      "tags": [
+        "конкурентный анализ",
+        "соцсети",
+        "AI Agent",
+        "мониторинг"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/1032",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 1032,
+      "added_date": "2026-05-30"
+    },
+    {
+      "id": "39b56d7fd3",
+      "niche": "Создание контента",
+      "niche_en": "content_creation",
+      "title": "Автоматизация генерации миниатюр YouTube через OpenAI и N8N",
+      "description": "Воркфлоу в N8N для автоматического создания миниатюр YouTube. Пользователь заполняет форму с описанием видео, система отправляет текст в OpenAI, генерирует визуальный элемент через Sticky Note и отправляет готовое изображение по HTTP-запросу.",
+      "tools": [
+        "N8N",
+        "OpenAI",
+        "Sticky Note",
+        "HTTP Request",
+        "Form Trigger"
+      ],
+      "tags": [
+        "генерация контента",
+        "YouTube",
+        "визуализация",
+        "OpenAI"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/1029",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 1029,
       "added_date": "2026-05-30"
     },
     {
@@ -124,6 +515,113 @@
       "source_chat": "Kumar & Solo",
       "source_chat_id": 1935988068,
       "source_msg_id": 421,
+      "added_date": "2026-05-29"
+    },
+    {
+      "id": "a8748fd340",
+      "niche": "Контент-маркетинг",
+      "niche_en": "content_marketing",
+      "title": "Автоматизация анализа Pinterest и генерации идей контента через N8N",
+      "description": "Автоматизация собирает данные о популярных пинах с Pinterest API, обрабатывает их ИИ-агентом для генерации рекомендаций по контенту, сохраняет результаты в Airtable и отправляет сводку на Gmail. Каждый день система анализирует тренды и предлагает 5 идей для публикаций.",
+      "tools": [
+        "N8N",
+        "Pinterest API",
+        "AI Agent",
+        "Airtable",
+        "Gmail"
+      ],
+      "tags": [
+        "Pinterest",
+        "контент-генерация",
+        "AI",
+        "тренд-анализ"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/1023",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 1023,
+      "added_date": "2026-05-29"
+    },
+    {
+      "id": "a56fda6f18",
+      "niche": "SaaS/Сервисы",
+      "niche_en": "saas_services",
+      "title": "Автоматизация обработки запросов WhatsApp через N8N",
+      "description": "Компания AccountCraft внедрила воркфлоу в N8N для автоматизации обработки клиентских запросов через WhatsApp. Система получает данные через вебхук, записывает их в Google Sheets, отправляет уведомления менеджеру по email и передаёт результаты на внешний URL для дальнейшей обработки.",
+      "tools": [
+        "N8N",
+        "WhatsApp",
+        "Google Sheets",
+        "Email",
+        "Webhook",
+        "HTTP Request"
+      ],
+      "tags": [
+        "WhatsApp",
+        "N8N",
+        "обработка запросов",
+        "CRM"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/1021",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 1021,
+      "added_date": "2026-05-29"
+    },
+    {
+      "id": "b2a7a04fde",
+      "niche": "Управление временем и коммуникация",
+      "niche_en": "time_management_communication",
+      "title": "AI-ассистент в LINE с интеграцией Google Календаря и Gmail",
+      "description": "Автоматизация в N8N обрабатывает запросы пользователей через мессенджер LINE, проверяет свободное время в Google Календаре и отправляет уведомления на Gmail. При необходимости использует OpenAI для генерации контекстных ответов. Подходит для бизнесменов и команд, работающих с расписаниями.",
+      "tools": [
+        "N8N",
+        "LINE",
+        "Google Calendar",
+        "Gmail",
+        "OpenAI"
+      ],
+      "tags": [
+        "мессенджеры",
+        "календарь",
+        "AI-агент",
+        "уведомления"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/1019",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 1019,
+      "added_date": "2026-05-29"
+    },
+    {
+      "id": "635581eecd",
+      "niche": "B2B сервисы",
+      "niche_en": "b2b_services",
+      "title": "Автоматизация захвата лидов с сайта в CRM",
+      "description": "Компания описывает проблему потери заявок с сайта (спам, невнимание менеджера, ночные заявки) и решение через прямую интеграцию формы с CRM. Заявка автоматически попадает в воронку с назначенным ответственным, минуя почту.",
+      "tools": [
+        "CRM",
+        "Альбато",
+        "веб-форма"
+      ],
+      "tags": [
+        "лиды",
+        "CRM",
+        "интеграция",
+        "захват"
+      ],
+      "result": "Время от заявки до первого контакта сокращается с часов до минут",
+      "relevance_score": 7,
+      "source_url": "https://t.me/albatonews/348",
+      "source_chat": "Альбато | 1 000+ сервисов для интеграций и автоматизаций без кода",
+      "source_chat_id": 1531254022,
+      "source_msg_id": 348,
       "added_date": "2026-05-29"
     },
     {
@@ -328,6 +826,194 @@
       "added_date": "2026-05-28"
     },
     {
+      "id": "93220b7119",
+      "niche": "Обработка клиентских запросов",
+      "niche_en": "customer_request_processing",
+      "title": "Автоматизация обработки запросов из Telegram с анализом AI и сохранением в Google Sheets",
+      "description": "Воркфлоу в N8N обрабатывает сообщения из Telegram, анализирует их с помощью Google Gemini через Chain LLM, структурирует данные и автоматически добавляет в Google Sheets. Параллельно создаются sticky notes для быстрого доступа команды.",
+      "tools": [
+        "N8N",
+        "Telegram",
+        "Google Gemini",
+        "Chain LLM",
+        "Google Sheets",
+        "Sticky Note"
+      ],
+      "tags": [
+        "telegram",
+        "AI анализ",
+        "google sheets",
+        "структурирование данных"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/1012",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 1012,
+      "added_date": "2026-05-28"
+    },
+    {
+      "id": "3fc5e29b64",
+      "niche": "Блокчейн и криптовалюты",
+      "niche_en": "blockchain",
+      "title": "Автоматизация аудиторских отчётов по блокчейн-транзакциям",
+      "description": "N8N-воркфлоу для блокчейн-проектов: вебхук принимает данные транзакций, HTTP-запросы проверяют их, автоматически создаётся отчёт в Google Drive и Notion, отправляется уведомление по email. Применимо для внутреннего анализа многоцепочечных операций.",
+      "tools": [
+        "N8N",
+        "Webhook",
+        "HTTP",
+        "Google Drive",
+        "Notion",
+        "Email"
+      ],
+      "tags": [
+        "документооборот",
+        "отчётность",
+        "блокчейн",
+        "n8n"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/1009",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 1009,
+      "added_date": "2026-05-28"
+    },
+    {
+      "id": "39ce6463a1",
+      "niche": "Маркетинговые агентства",
+      "niche_en": "marketing_agencies",
+      "title": "Автоматизация мониторинга позиций конкурентов через Google Search",
+      "description": "Автоматизация в N8N извлекает результаты поисковой страницы Google через Bright Data, анализирует данные с помощью LLM и отправляет отчёты. Маркетологи и аналитики используют её для мониторинга позиций конкурентов по ключевым словам без ручной работы.",
+      "tools": [
+        "N8N",
+        "Bright Data",
+        "Google Search",
+        "LLM"
+      ],
+      "tags": [
+        "конкурентный анализ",
+        "парсинг",
+        "мониторинг",
+        "SEO"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/1007",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 1007,
+      "added_date": "2026-05-28"
+    },
+    {
+      "id": "774aea445d",
+      "niche": "Продажи и CRM",
+      "niche_en": "sales_crm",
+      "title": "Автоматический отчёт из amoCRM в Telegram через ИИ и сервер",
+      "description": "Компания настроила ежедневную отправку отчётов из amoCRM в Telegram, используя ChatGPT/Claude для написания скрипта и бюджетный сервер (300 руб/мес). Вместо найма разработчика — самостоятельная настройка через диалог с нейросетью. Можно адаптировать под любые метрики: отчёты по менеджерам, контроль зависших сделок, уведомления о пропущенных заявках.",
+      "tools": [
+        "ChatGPT/Claude/DeepSeek",
+        "amoCRM API",
+        "VPS сервер"
+      ],
+      "tags": [
+        "отчёты",
+        "CRM",
+        "Telegram",
+        "автоматизация",
+        "ИИ"
+      ],
+      "result": "Стоимость 300 руб/месяц вместо найма разработчика. Время внедрения — 2 часа.",
+      "relevance_score": 7,
+      "source_url": "https://t.me/sales_tools/182",
+      "source_chat": "Инструменты роста продаж | Заводов",
+      "source_chat_id": 1952024261,
+      "source_msg_id": 182,
+      "added_date": "2026-05-28"
+    },
+    {
+      "id": "394b757345",
+      "niche": "E-commerce",
+      "niche_en": "ecommerce",
+      "title": "Автоматизация персонализированных поздравлений с днём рождения",
+      "description": "Автоматизация в N8N собирает данные о днях рождения из Google Sheets, фильтрует клиентов с днём рождения в текущий день, генерирует персонализированные письма через AI и отправляет их через Gmail с предложением скидки.",
+      "tools": [
+        "N8N",
+        "Google Sheets",
+        "Gmail",
+        "LangChain"
+      ],
+      "tags": [
+        "поздравления",
+        "CRM",
+        "email-маркетинг",
+        "AI"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/1005",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 1005,
+      "added_date": "2026-05-27"
+    },
+    {
+      "id": "99eaa97f6b",
+      "niche": "Управление проектами",
+      "niche_en": "project_management",
+      "title": "Автоматическая генерация списков задач из аудиозаписей встреч",
+      "description": "Автоматизация в N8N отслеживает новые аудиофайлы в Google Drive, преобразует их в текст через Google Gemini, генерирует список задач и отправляет в Slack-канал. Подходит для команд, проводящих частые встречи и совещания.",
+      "tools": [
+        "N8N",
+        "Google Drive",
+        "Google Gemini",
+        "Slack"
+      ],
+      "tags": [
+        "встречи",
+        "задачи",
+        "аудио",
+        "Slack"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/1002",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 1002,
+      "added_date": "2026-05-27"
+    },
+    {
+      "id": "fa31e8ac44",
+      "niche": "Служба поддержки",
+      "niche_en": "customer_support",
+      "title": "Автоматизация обнаружения и маскирования ПДн в чатах поддержки",
+      "description": "Workflow в N8N анализирует текстовые сообщения в чатах службы поддержки на наличие персональных данных (ПДн) с помощью нейросетей. Система автоматически идентифицирует и маскирует чувствительную информацию клиентов, обеспечивая соответствие требованиям конфиденциальности.",
+      "tools": [
+        "N8N",
+        "Chat Trigger",
+        "LM Chat Ollama",
+        "LM Chat Open Router",
+        "Memory Buffer Window",
+        "AI Agent"
+      ],
+      "tags": [
+        "конфиденциальность",
+        "обработка данных",
+        "чаты",
+        "маскирование"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/999",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 999,
+      "added_date": "2026-05-27"
+    },
+    {
       "id": "6b7b7f15e2",
       "niche": "Контент-маркетинг",
       "niche_en": "content_marketing",
@@ -350,6 +1036,160 @@
       "source_chat": "ВАЙБКОДИМ С ТЕЛЕФОНА 27-28 МАЯ",
       "source_chat_id": 3967087016,
       "source_msg_id": 56,
+      "added_date": "2026-05-26"
+    },
+    {
+      "id": "49c36a5682",
+      "niche": "Аналитика данных",
+      "niche_en": "data_analytics",
+      "title": "Автоматизация извлечения и обработки данных с LLM в Airtable",
+      "description": "Воркфлоу в N8N для извлечения данных из файлов (CSV), обработки через Chain LLM с динамическими подсказками и сохранения результатов в Airtable. Использует фильтры для управления потоком данных. Применимо для аналитиков, работающих с большими объёмами информации о клиентах.",
+      "tools": [
+        "N8N",
+        "Airtable",
+        "Chain LLM",
+        "OpenAI LM Chat",
+        "Extract From File"
+      ],
+      "tags": [
+        "извлечение данных",
+        "LLM",
+        "Airtable",
+        "N8N"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/997",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 997,
+      "added_date": "2026-05-26"
+    },
+    {
+      "id": "2f7fa28671",
+      "niche": "Рекрутмент",
+      "niche_en": "recruitment",
+      "title": "Ежедневный дайджест заявок с AI-обработкой",
+      "description": "Автоматизация в N8N собирает новые заявки, обрабатывает их через Google Gemini и Chain LLM, формирует сводку и отправляет дайджест на Gmail каждое утро. Также создаёт заметку в Sticky Note для удобного просмотра. Подходит для HR-менеджеров и рекрутеров.",
+      "tools": [
+        "N8N",
+        "Google Gemini",
+        "Chain LLM",
+        "Gmail",
+        "Sticky Note"
+      ],
+      "tags": [
+        "дайджест",
+        "AI",
+        "рекрутмент",
+        "email"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/994",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 994,
+      "added_date": "2026-05-26"
+    },
+    {
+      "id": "cadbac499b",
+      "niche": "Разработка ПО",
+      "niche_en": "software_development",
+      "title": "Мониторинг GitHub с AI-анализом в Telegram",
+      "description": "Автоматизация отслеживает обновления репозитория GitHub через планировщик, обрабатывает данные с помощью AI для генерации анализа и отправляет сводку в Telegram-канал. Команда разработчиков получает оперативные уведомления о каждом коммите.",
+      "tools": [
+        "n8n",
+        "GitHub API",
+        "OpenAI",
+        "Telegram API"
+      ],
+      "tags": [
+        "мониторинг",
+        "GitHub",
+        "AI-анализ",
+        "уведомления"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/992",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 992,
+      "added_date": "2026-05-26"
+    },
+    {
+      "id": "303edce9f7",
+      "niche": "Контент-маркетинг",
+      "niche_en": "content_marketing",
+      "title": "Система из 4 ИИ-агентов для мониторинга и публикации контента",
+      "description": "Автор создал систему из 4 виртуальных ИИ-сотрудников в Claude Code: первый сканирует 51 Telegram-канал и 20 RSS-источников (2400+ сообщений в день), второй фильтрует до 47 лучших тем, третий пишет посты в авторском стиле с самопроверкой, четвёртый публикует в оптимальное время. Вместо 2 часов ручной работы — 15 минут в день.",
+      "tools": [
+        "Claude Code",
+        "Telegram API",
+        "RSS",
+        "ИИ-агенты"
+      ],
+      "tags": [
+        "контент",
+        "автоматизация",
+        "ИИ-агенты",
+        "мониторинг"
+      ],
+      "result": "Сокращение времени на контент-маркетинг с 2 часов до 15 минут в день",
+      "relevance_score": 8,
+      "source_url": "https://t.me/DmitryLedovskih/3816",
+      "source_chat": "Дмитрий Ледовских | НейроБизнес",
+      "source_chat_id": 1390950632,
+      "source_msg_id": 3816,
+      "added_date": "2026-05-26"
+    },
+    {
+      "id": "b75e7bf36a",
+      "niche": "Медицина и фитнес",
+      "niche_en": "healthcare_fitness",
+      "title": "Чат-бот для врача и ЛФК-тренера с отслеживанием динамики пациентов",
+      "description": "Врач и ЛФК-тренер внедрили чат-бота для оптимизации работы с пациентами. Бот автоматизирует выдачу материалов, отслеживает динамику состояния здоровья и позволяет отправлять персональные видеорекомендации через админ-кабинет.",
+      "tools": [
+        "PuzzleBot",
+        "Telegram"
+      ],
+      "tags": [
+        "чат-бот",
+        "пациенты",
+        "автоматизация",
+        "видеорекомендации"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/wearepuzzlebot/1212",
+      "source_chat": "PuzzleBot :// Конструктор ботов и Мини-приложений",
+      "source_chat_id": 1420757506,
+      "source_msg_id": 1212,
+      "added_date": "2026-05-26"
+    },
+    {
+      "id": "c0fc1c9b31",
+      "niche": "Интернет-магазин",
+      "niche_en": "ecommerce",
+      "title": "Фильтрация писем из Яндекс Почты в мессенджер МАКС",
+      "description": "Компания настроила автоматическую отправку важных писем (заявки, оплаты) из Яндекс Почты в корпоративный чат МАКС через Альбато. Фильтры по теме и отправителю отсеивают спам, в мессенджер попадают только релевантные письма в чистом виде без HTML-разметки.",
+      "tools": [
+        "Альбато",
+        "Яндекс Почта",
+        "МАКС"
+      ],
+      "tags": [
+        "уведомления",
+        "фильтрация",
+        "мессенджеры"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/albatonews/346",
+      "source_chat": "Альбато | 1 000+ сервисов для интеграций и автоматизаций без кода",
+      "source_chat_id": 1531254022,
+      "source_msg_id": 346,
       "added_date": "2026-05-26"
     },
     {
@@ -430,6 +1270,87 @@
       "added_date": "2026-05-25"
     },
     {
+      "id": "22b8bfca0c",
+      "niche": "Рекрутмент и маркетинг",
+      "niche_en": "recruitment_marketing",
+      "title": "Автоматизация персонализированных сообщений в LinkedIn через N8N",
+      "description": "Воркфлоу в N8N собирает данные потенциальных клиентов из Google Sheets, анализирует их через OpenAI для генерации персонализированных сообщений, отправляет в LinkedIn и логирует результаты обратно в таблицу для отслеживания. Применимо для маркетологов и рекрутеров, ищущих масштабировать холодный аутрич.",
+      "tools": [
+        "N8N",
+        "Google Sheets",
+        "OpenAI",
+        "LinkedIn API"
+      ],
+      "tags": [
+        "LinkedIn",
+        "холодный аутрич",
+        "AI",
+        "персонализация"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/989",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 989,
+      "added_date": "2026-05-25"
+    },
+    {
+      "id": "845d7e0e8b",
+      "niche": "E-commerce",
+      "niche_en": "ecommerce",
+      "title": "Автоматизация сбора и обработки ключевых слов Amazon",
+      "description": "Воркфлоу в N8N для сбора ключевых слов с Amazon через HTTP-запросы, агрегирования данных и сохранения в Airtable. Результаты разбиваются на элементы и отправляются в Sticky Note для анализа. Применимо для маркетологов и SEO-специалистов при оптимизации товарных листингов.",
+      "tools": [
+        "N8N",
+        "Airtable",
+        "HTTP Request",
+        "Sticky Note",
+        "Amazon"
+      ],
+      "tags": [
+        "ключевые слова",
+        "SEO",
+        "Amazon",
+        "агрегация данных"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/986",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 986,
+      "added_date": "2026-05-25"
+    },
+    {
+      "id": "c9a0ccc337",
+      "niche": "B2B продажи",
+      "niche_en": "b2b_sales",
+      "title": "Автоматизация холодных писем из LinkedIn с персонализацией через GPT-4",
+      "description": "Воркфлоу в n8n собирает данные профиля LinkedIn через форму, использует Dropcontact для поиска контактов, генерирует персонализированное письмо через GPT-4 и отправляет через Gmail. Результаты сохраняются в Airtable для анализа.",
+      "tools": [
+        "n8n",
+        "GPT-4",
+        "Dropcontact",
+        "Gmail",
+        "Airtable",
+        "LinkedIn"
+      ],
+      "tags": [
+        "холодные письма",
+        "персонализация",
+        "B2B",
+        "LinkedIn"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/984",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 984,
+      "added_date": "2026-05-25"
+    },
+    {
       "id": "bffd3cea48",
       "niche": "B2B франшиза",
       "niche_en": "b2b_franchise",
@@ -453,6 +1374,166 @@
       "source_chat_id": 1542552403,
       "source_msg_id": 1439,
       "added_date": "2026-05-24"
+    },
+    {
+      "id": "71691e58f7",
+      "niche": "Генерация лидов",
+      "niche_en": "lead_generation",
+      "title": "Автоматическая оценка лидов с сайта через ИИ и отправка персонализированных писем",
+      "description": "Автоматизация в N8N обрабатывает формы с сайта через вебхук, оценивает качество лидов с помощью ИИ (OpenAI), сохраняет данные в Google Sheets и отправляет персонализированные письма через Gmail для перспективных лидов.",
+      "tools": [
+        "N8N",
+        "Webhook",
+        "Google Sheets",
+        "Gmail",
+        "OpenAI",
+        "Memory Buffer Window"
+      ],
+      "tags": [
+        "лиды",
+        "ИИ",
+        "email",
+        "CRM"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/981",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 981,
+      "added_date": "2026-05-24"
+    },
+    {
+      "id": "f6ac194e0a",
+      "niche": "Фриланс",
+      "niche_en": "freelance",
+      "title": "Автоматизация обработки писем в N8N с записью в таблицу и заметками",
+      "description": "Фрилансер настроил воркфлоу в N8N, который получает письма из Gmail, обрабатывает данные через кастомный код, записывает результаты в Google Sheets и создаёт заметки на рабочем столе с указанием размера и цвета. Процесс срабатывает при получении письма с важными задачами.",
+      "tools": [
+        "N8N",
+        "Gmail",
+        "Google Sheets",
+        "Sticky Note"
+      ],
+      "tags": [
+        "email",
+        "обработка данных",
+        "таблицы",
+        "заметки"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/978",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 978,
+      "added_date": "2026-05-24"
+    },
+    {
+      "id": "4f23b4751b",
+      "niche": "Бухгалтерия и финансы",
+      "niche_en": "accounting_finance",
+      "title": "Автоматизация обработки счёт-фактур через OCR и OpenAI",
+      "description": "Автоматизация в N8N извлекает данные из счёт-фактур в Google Drive через OCR, обрабатывает их OpenAI и автоматически заполняет Google Sheets. Подходит для бухгалтеров, которые обрабатывают счета еженедельно.",
+      "tools": [
+        "N8N",
+        "Google Drive",
+        "OpenAI",
+        "Google Sheets",
+        "OCR"
+      ],
+      "tags": [
+        "OCR",
+        "документы",
+        "Google Sheets",
+        "OpenAI"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/976",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 976,
+      "added_date": "2026-05-24"
+    },
+    {
+      "id": "a9868330f4",
+      "niche": "Контент-маркетинг",
+      "niche_en": "content_marketing",
+      "title": "Автоматизация генерации структуры блога по ключевым словам через N8N",
+      "description": "Автоматизация в N8N принимает ключевые слова через вебхук, обрабатывает их LLM (Anthropic Claude), генерирует структуру статей и сохраняет результаты в Google Sheets с визуализацией. Подходит для маркетологов и контент-менеджеров для быстрой генерации идей контента.",
+      "tools": [
+        "N8N",
+        "Google Sheets",
+        "Anthropic Claude",
+        "Webhook"
+      ],
+      "tags": [
+        "генерация контента",
+        "LLM",
+        "Google Sheets",
+        "N8N"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/973",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 973,
+      "added_date": "2026-05-23"
+    },
+    {
+      "id": "28937f4a1e",
+      "niche": "Медиа и аналитика",
+      "niche_en": "media_analytics",
+      "title": "Бот для автоматизированного анализа новостей с отправкой в Slack",
+      "description": "N8N-бот собирает новости с заданных источников через Firecrawl, анализирует их с помощью AI (LM Chat OpenAI) и отправляет инсайты в Slack по расписанию. Подходит для команд, которым нужна актуальная информация о рынке и трендах в реальном времени.",
+      "tools": [
+        "N8N",
+        "Firecrawl",
+        "OpenAI LM Chat",
+        "Slack",
+        "HTTP Request"
+      ],
+      "tags": [
+        "новости",
+        "AI-анализ",
+        "Slack",
+        "мониторинг"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/970",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 970,
+      "added_date": "2026-05-23"
+    },
+    {
+      "id": "e1901eaf22",
+      "niche": "Маркетинговые агентства",
+      "niche_en": "marketing_agencies",
+      "title": "Автоматизация мониторинга конкурентов через Google Search + Bright Data + Gemini",
+      "description": "Автоматизация в N8N извлекает данные с результатов поиска Google через Bright Data API, обрабатывает их с помощью Google Gemini для анализа и суммирования, затем выводит результаты в виде заметок. Позволяет маркетологам отслеживать позиции конкурентов по ключевым словам в автоматическом режиме.",
+      "tools": [
+        "N8N",
+        "Bright Data",
+        "Google Gemini",
+        "Google Search"
+      ],
+      "tags": [
+        "мониторинг конкурентов",
+        "SEO",
+        "AI анализ",
+        "парсинг"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/968",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 968,
+      "added_date": "2026-05-23"
     },
     {
       "id": "0a010a5930",
@@ -507,6 +1588,163 @@
       "added_date": "2026-05-22"
     },
     {
+      "id": "0b683329af",
+      "niche": "Бухгалтерия и учет расходов",
+      "niche_en": "accounting",
+      "title": "Автоматизация обработки чеков через WhatsApp и OCR",
+      "description": "Автоматизация в n8n обрабатывает фото чеков, отправленные через WhatsApp. Система извлекает текст с помощью OpenAI Vision и сохраняет структурированные данные в Google Sheets для анализа расходов.",
+      "tools": [
+        "n8n",
+        "WhatsApp",
+        "OpenAI",
+        "Google Sheets",
+        "Google Drive"
+      ],
+      "tags": [
+        "OCR",
+        "мессенджеры",
+        "учет расходов",
+        "AI"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/966",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 966,
+      "added_date": "2026-05-22"
+    },
+    {
+      "id": "399bab4df4",
+      "niche": "E-commerce",
+      "niche_en": "ecommerce",
+      "title": "Автоматическое удаление фона из изображений товаров WooCommerce",
+      "description": "Автоматизация в n8n загружает изображения продуктов из WooCommerce, удаляет фон через API, сохраняет результаты на FTP и логирует в Google Sheets. Обрабатывает ~50 изображений в неделю без ручного редактирования.",
+      "tools": [
+        "n8n",
+        "WooCommerce",
+        "HTTP API",
+        "FTP",
+        "Google Sheets"
+      ],
+      "tags": [
+        "изображения",
+        "WooCommerce",
+        "обработка данных"
+      ],
+      "result": "Экономия времени на редактировании 50 изображений в неделю",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/963",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 963,
+      "added_date": "2026-05-22"
+    },
+    {
+      "id": "d6c365a0ab",
+      "niche": "Управление заявками",
+      "niche_en": "lead_management",
+      "title": "Автоматическая рассылка отчётов о заявках в Telegram по расписанию",
+      "description": "N8N-автоматизация, которая по Cron-расписанию запрашивает данные из MySQL (новые заявки), обрабатывает их и отправляет сводку в Telegram-чат. Может также принимать данные через вебхук для гибкости.",
+      "tools": [
+        "N8N",
+        "MySQL",
+        "Telegram",
+        "Cron",
+        "Webhook"
+      ],
+      "tags": [
+        "отчёты",
+        "уведомления",
+        "расписание",
+        "Telegram"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/961",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 961,
+      "added_date": "2026-05-22"
+    },
+    {
+      "id": "49839f8108",
+      "niche": "Маркетинговые агентства",
+      "niche_en": "marketing_agencies",
+      "title": "Автоматизация создания UTM-ссылок, QR-кодов и отчетов Google Analytics",
+      "description": "N8N workflow для маркетологов, который автоматически генерирует UTM-ссылки и QR-коды из Airtable, собирает данные о посещениях из Google Analytics и отправляет сводные отчеты на email через Gmail. Применяется для отслеживания эффективности рекламных кампаний (например, Facebook).",
+      "tools": [
+        "n8n",
+        "Airtable",
+        "Gmail",
+        "Google Analytics",
+        "OpenAI"
+      ],
+      "tags": [
+        "UTM",
+        "QR-коды",
+        "аналитика",
+        "отчеты"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/958",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 958,
+      "added_date": "2026-05-21"
+    },
+    {
+      "id": "37fd8b879f",
+      "niche": "Маркетинговое агентство",
+      "niche_en": "marketing_agency",
+      "title": "Мультиплатформенный контент-креатор с одобрением через GoToHuman",
+      "description": "Автоматизация в N8N собирает идеи контента из Google Sheets, отправляет на одобрение в GoToHuman, затем публикует в социальные сети. Процесс включает проверку и разбиение на партии для удобства обработки команды.",
+      "tools": [
+        "N8N",
+        "Google Sheets",
+        "GoToHuman",
+        "социальные сети"
+      ],
+      "tags": [
+        "контент",
+        "одобрение",
+        "публикация",
+        "социальные сети"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/953",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 953,
+      "added_date": "2026-05-21"
+    },
+    {
+      "id": "8e830a3918",
+      "niche": "Автоматизация бизнеса",
+      "niche_en": "business_automation",
+      "title": "Интеграция бизнес-бота с NocoDB для сбора ответов",
+      "description": "Демонстрация настройки бизнес-бота для автоматического сбора и записи ответов клиентов в NocoDB. Используются команды, условия, переменные и интеграция для распределения пользователей и фиксации данных в реальном времени.",
+      "tools": [
+        "PuzzleBot",
+        "NocoDB"
+      ],
+      "tags": [
+        "бот",
+        "интеграция",
+        "база данных",
+        "автосбор данных"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/wearepuzzlebot/1208",
+      "source_chat": "PuzzleBot :// Конструктор ботов и Мини-приложений",
+      "source_chat_id": 1420757506,
+      "source_msg_id": 1208,
+      "added_date": "2026-05-21"
+    },
+    {
       "id": "d3a262233b",
       "niche": "Стоматология",
       "niche_en": "dental",
@@ -534,6 +1772,32 @@
       "added_date": "2026-05-20"
     },
     {
+      "id": "78924a61de",
+      "niche": "E-commerce",
+      "niche_en": "ecommerce",
+      "title": "Конвертация профилей Squarespace в клиентов Shopify через N8N",
+      "description": "Автоматизация в N8N извлекает данные пользователей из Squarespace через вебхук, обрабатывает их в Google Sheets, разбивает на партии и создаёт клиентов в Shopify. Результаты записываются обратно в таблицу для анализа. Подходит для владельцев интернет-магазинов, переносящих данные между платформами.",
+      "tools": [
+        "N8N",
+        "Squarespace",
+        "Google Sheets",
+        "Shopify",
+        "Webhook"
+      ],
+      "tags": [
+        "миграция данных",
+        "интеграция",
+        "e-commerce"
+      ],
+      "result": "Возможность переноса 100 клиентов за раз для быстрого импорта в Shopify",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/948",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 948,
+      "added_date": "2026-05-20"
+    },
+    {
       "id": "4ca1c56902",
       "niche": "Образовательные платформы",
       "niche_en": "edtech",
@@ -556,6 +1820,113 @@
       "source_chat": "🥇Ковчег / автоматизация make.com и агенты",
       "source_chat_id": 1616816889,
       "source_msg_id": 1318,
+      "added_date": "2026-05-19"
+    },
+    {
+      "id": "b898b9a9fc",
+      "niche": "E-commerce",
+      "niche_en": "ecommerce",
+      "title": "Чат-бот с интеграцией базы данных для ответов о продуктах",
+      "description": "Telegram-бот автоматически обрабатывает запросы пользователей о продуктах, извлекает информацию из Supabase, генерирует ответы через LLM и сохраняет результаты в Google Docs. Позволяет предпринимателям автоматизировать поддержку и аналитику.",
+      "tools": [
+        "n8n",
+        "Telegram",
+        "Supabase",
+        "OpenRouter",
+        "Google Docs",
+        "Chain LLM"
+      ],
+      "tags": [
+        "чат-бот",
+        "LLM",
+        "база данных",
+        "Telegram"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/942",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 942,
+      "added_date": "2026-05-19"
+    },
+    {
+      "id": "01fdfc92e3",
+      "niche": "Управление проектами",
+      "niche_en": "project_management",
+      "title": "Классификация задач из Microsoft Teams в Google Sheets через OpenAI",
+      "description": "Автоматизация в n8n получает задачи из Microsoft Teams через вебхук, классифицирует их с помощью OpenAI и записывает результаты в Google Sheets. Позволяет командам автоматически отслеживать и категоризировать задачи без ручной обработки.",
+      "tools": [
+        "n8n",
+        "Microsoft Teams",
+        "OpenAI API",
+        "Google Sheets",
+        "Webhook"
+      ],
+      "tags": [
+        "классификация",
+        "Teams",
+        "Google Sheets",
+        "OpenAI"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/939",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 939,
+      "added_date": "2026-05-19"
+    },
+    {
+      "id": "331ec746ff",
+      "niche": "Маркетинг и контент-менеджмент",
+      "niche_en": "marketing_content",
+      "title": "Автоматизация расписания контента через N8N с Google Sheets",
+      "description": "Воркфлоу в N8N для автоматизации планирования публикаций контента. Система собирает данные через AI Agent, разбивает на партии (Split In Batches), обрабатывает через Tool Code и сохраняет результаты в Google Sheets для синхронизации с различными платформами.",
+      "tools": [
+        "N8N",
+        "Google Sheets",
+        "AI Agent",
+        "Split In Batches",
+        "Tool Code"
+      ],
+      "tags": [
+        "контент-планирование",
+        "расписание",
+        "google-sheets",
+        "n8n"
+      ],
+      "result": "",
+      "relevance_score": 6,
+      "source_url": "https://t.me/N8N_automatisation/937",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 937,
+      "added_date": "2026-05-19"
+    },
+    {
+      "id": "4ff7a1ef5f",
+      "niche": "Управление заказами и заявками",
+      "niche_en": "order_management",
+      "title": "Автоматическая отправка уведомлений о новых заказах из Google Таблиц в мессенджер",
+      "description": "Компания ведёт заказы в Google Таблицах. Через Альбато настроена автоматическая отправка уведомлений в мессенджер МАКС при появлении новой строки. Бот подставляет данные клиента, сумму, артикул. Возможны фильтры по сумме заказа и расписание отправки.",
+      "tools": [
+        "Google Sheets",
+        "Альбато",
+        "МАКС"
+      ],
+      "tags": [
+        "уведомления",
+        "Google Sheets",
+        "мессенджеры",
+        "заказы"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/albatonews/342",
+      "source_chat": "Альбато | 1 000+ сервисов для интеграций и автоматизаций без кода",
+      "source_chat_id": 1531254022,
+      "source_msg_id": 342,
       "added_date": "2026-05-19"
     },
     {
@@ -637,6 +2008,247 @@
       "added_date": "2026-05-18"
     },
     {
+      "id": "f2333993cb",
+      "niche": "Разработка ПО",
+      "niche_en": "software_development",
+      "title": "Автоматизация анализа времени сборки проектов в N8N",
+      "description": "Автоматизация в N8N собирает данные о времени сборки Gradle/CocoaPods проектов из GitHub, анализирует их через AI Agent, сохраняет в Airtable и отправляет отчеты с графиками в Gmail. Помогает разработчикам и PM оптимизировать процессы сборки.",
+      "tools": [
+        "N8N",
+        "GitHub",
+        "Airtable",
+        "Gmail",
+        "OpenAI LM Chat",
+        "Agent"
+      ],
+      "tags": [
+        "CI/CD",
+        "анализ данных",
+        "отчёты",
+        "GitHub"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/934",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 934,
+      "added_date": "2026-05-18"
+    },
+    {
+      "id": "fd4c9257c7",
+      "niche": "Маркетинг и социальные сети",
+      "niche_en": "marketing_social_media",
+      "title": "Автоматизация генерации и публикации постов в LinkedIn через ИИ",
+      "description": "Автоматизация в N8N собирает данные о продуктах из Notion, генерирует посты через OpenAI и публикует их в LinkedIn по расписанию. Позволяет маркетологам и предпринимателям автоматизировать контент-стратегию в социальных сетях без ручной работы.",
+      "tools": [
+        "N8N",
+        "OpenAI",
+        "Notion",
+        "LinkedIn",
+        "Schedule Trigger"
+      ],
+      "tags": [
+        "контент-маркетинг",
+        "LinkedIn",
+        "ИИ",
+        "социальные сети"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/932",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 932,
+      "added_date": "2026-05-18"
+    },
+    {
+      "id": "4e6b89a30b",
+      "niche": "Документооборот",
+      "niche_en": "document_processing",
+      "title": "Автоматизация распознавания текста из изображений через Telegram",
+      "description": "N8N-воркфлоу получает изображения через Telegram, извлекает текст с помощью Tesseract, анализирует его Google Gemini и отправляет результаты обратно в чат. Применимо для команд, работающих с документами и визуальными данными.",
+      "tools": [
+        "N8N",
+        "Telegram",
+        "Tesseract",
+        "Google Gemini"
+      ],
+      "tags": [
+        "OCR",
+        "Telegram",
+        "документы",
+        "AI"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/929",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 929,
+      "added_date": "2026-05-18"
+    },
+    {
+      "id": "c98f8eda4b",
+      "niche": "Цифровой маркетинг",
+      "niche_en": "digital_marketing",
+      "title": "Автоматизация создания UTM-ссылок, QR-кодов и отчётов Google Analytics",
+      "description": "N8N-воркфлоу для маркетологов: автоматически создаёт UTM-ссылки и QR-коды из данных Airtable, собирает аналитику из Google Analytics и отправляет еженедельные отчёты по email через Gmail. Применимо для отслеживания эффективности кампаний на акционные страницы.",
+      "tools": [
+        "N8N",
+        "Airtable",
+        "Google Analytics",
+        "Gmail",
+        "OpenAI"
+      ],
+      "tags": [
+        "маркетинг",
+        "аналитика",
+        "отчёты",
+        "UTM"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/922",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 922,
+      "added_date": "2026-05-17"
+    },
+    {
+      "id": "f28e44fb15",
+      "niche": "Лидогенерация",
+      "niche_en": "lead_generation",
+      "title": "Автоматизация ввода и обработки лидов через вебхук в N8N",
+      "description": "Маркетинговая команда автоматизирует приём лидов через вебхук. Данные сохраняются в Google Sheets, обрабатываются JavaScript-кодом, создаются визуальные заметки в Sticky Note и отправляется email-уведомление.",
+      "tools": [
+        "N8N",
+        "Google Sheets",
+        "Webhook",
+        "Sticky Note",
+        "SendGrid"
+      ],
+      "tags": [
+        "лидогенерация",
+        "вебхук",
+        "email-уведомления"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/919",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 919,
+      "added_date": "2026-05-17"
+    },
+    {
+      "id": "efbbc2669d",
+      "niche": "Продажи и маркетинг",
+      "niche_en": "sales_marketing",
+      "title": "Автоматическая генерация коммерческих предложений через N8N",
+      "description": "Автоматизация в N8N генерирует коммерческие предложения на основе данных из Airtable. При поступлении нового запроса система создаёт текст через OpenAI, оформляет его в презентацию Google Slides и сохраняет в Google Drive.",
+      "tools": [
+        "N8N",
+        "Airtable",
+        "OpenAI",
+        "Google Slides",
+        "Google Drive"
+      ],
+      "tags": [
+        "генерация",
+        "предложения",
+        "презентации",
+        "автоматизация"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/917",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 917,
+      "added_date": "2026-05-17"
+    },
+    {
+      "id": "52420de042",
+      "niche": "Обслуживание клиентов",
+      "niche_en": "customer_support",
+      "title": "Telegram AI бот для ответов на вопросы клиентов",
+      "description": "Автоматизация в N8N, которая принимает сообщения из Telegram, обрабатывает их через OpenAI с сохранением контекста сессии и отправляет ответы обратно. Подходит для компаний, которые хотят автоматизировать ответы на частые вопросы о продуктах.",
+      "tools": [
+        "N8N",
+        "Telegram",
+        "OpenAI",
+        "LM Chat Open AI",
+        "Memory Buffer Window"
+      ],
+      "tags": [
+        "telegram",
+        "AI",
+        "FAQ",
+        "агент"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/915",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 915,
+      "added_date": "2026-05-16"
+    },
+    {
+      "id": "6d7a7b4a37",
+      "niche": "Служба поддержки",
+      "niche_en": "customer_support",
+      "title": "Автоматизация обработки запросов в Telegram через OpenAI",
+      "description": "Бот в Telegram получает сообщения от клиентов, обрабатывает их через OpenAI для генерации персонализированных ответов и одновременно создаёт заметки с данными для внутреннего анализа. Результаты отправляются обратно клиенту в Telegram.",
+      "tools": [
+        "n8n",
+        "Telegram",
+        "OpenAI"
+      ],
+      "tags": [
+        "чат-боты",
+        "мессенджеры",
+        "AI",
+        "обработка данных"
+      ],
+      "result": "",
+      "relevance_score": 6,
+      "source_url": "https://t.me/N8N_automatisation/912",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 912,
+      "added_date": "2026-05-16"
+    },
+    {
+      "id": "73986e13b0",
+      "niche": "Крипто-трейдинг",
+      "niche_en": "crypto_trading",
+      "title": "Автоматизация ежедневной рассылки крипто-новостей через N8N",
+      "description": "Автоматизация собирает свежие новости о криптовалютах из Brave Search, обрабатывает их GPT-4.1-mini для создания краткого дайджеста и отправляет в Telegram по расписанию. Подходит для информирования трейдеров и инвесторов о рыночных трендах в удобном формате.",
+      "tools": [
+        "N8N",
+        "Brave Search",
+        "GPT-4.1-mini",
+        "Telegram",
+        "Schedule Trigger",
+        "Chain LLM"
+      ],
+      "tags": [
+        "рассылка",
+        "крипто",
+        "новости",
+        "Telegram"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/910",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 910,
+      "added_date": "2026-05-16"
+    },
+    {
       "id": "d6b7e4a6a2",
       "niche": "Гостинично-туристический бизнес",
       "niche_en": "hospitality",
@@ -658,6 +2270,112 @@
       "source_chat": "CMO Chat",
       "source_chat_id": 3894415165,
       "source_msg_id": 1345,
+      "added_date": "2026-05-15"
+    },
+    {
+      "id": "9e1d88c8f6",
+      "niche": "Аналитика данных",
+      "niche_en": "data_analytics",
+      "title": "Извлечение и обработка данных с AI в N8N",
+      "description": "Автоматизация в N8N извлекает данные из CSV-файлов, обрабатывает их через Chain LLM для анализа, фильтрует и разбивает на партии, затем сохраняет результаты в Airtable. Применимо для аналитиков и маркетологов, работающих с большими объемами клиентских данных.",
+      "tools": [
+        "N8N",
+        "Airtable",
+        "Chain LLM",
+        "OpenAI LM Chat",
+        "Extract From File"
+      ],
+      "tags": [
+        "извлечение данных",
+        "AI обработка",
+        "Airtable",
+        "N8N"
+      ],
+      "result": "",
+      "relevance_score": 6,
+      "source_url": "https://t.me/N8N_automatisation/908",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 908,
+      "added_date": "2026-05-15"
+    },
+    {
+      "id": "7bfc59c40a",
+      "niche": "Маркетинг и управление проектами",
+      "niche_en": "marketing_project_management",
+      "title": "Автоматизация обработки писем Gmail с AI-суммаризацией",
+      "description": "Воркфлоу в N8N, который каждые 30 минут извлекает письма из Gmail, фильтрует их, обрабатывает через LM Chat Open Router с Memory Buffer и создаёт сводку в виде заметок. Применимо для маркетологов и менеджеров, которым нужно автоматически собирать отзывы клиентов и готовить аналитику для команды.",
+      "tools": [
+        "N8N",
+        "Gmail",
+        "Lm Chat Open Router",
+        "Memory Buffer Window",
+        "Sticky Note"
+      ],
+      "tags": [
+        "почта",
+        "AI",
+        "агрегация",
+        "сводки"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/906",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 906,
+      "added_date": "2026-05-15"
+    },
+    {
+      "id": "6cb23ee00c",
+      "niche": "Медиа и журналистика",
+      "niche_en": "media_journalism",
+      "title": "Автоматизация сбора и рассылки новостей через N8N",
+      "description": "Автоматизация собирает новости из API, обрабатывает их AI для создания сжатых сводок и отправляет готовые сообщения на Gmail. Данные записываются в Google Sheets для анализа. Подходит журналистам и маркетологам для отслеживания новостей в реальном времени.",
+      "tools": [
+        "N8N",
+        "OpenAI",
+        "Gmail",
+        "Google Sheets",
+        "HTTP Request"
+      ],
+      "tags": [
+        "новости",
+        "рассылка",
+        "AI",
+        "автоматизация"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/903",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 903,
+      "added_date": "2026-05-15"
+    },
+    {
+      "id": "e3349d1eb4",
+      "niche": "E-commerce (FBS)",
+      "niche_en": "ecommerce_fbs",
+      "title": "Автоматизация передачи заказов из Ozon в Почту России",
+      "description": "Продавец FBS на Ozon автоматизировал передачу заказов в Почту России через Альбато. Система отслеживает новый заказ, нормализует адрес, рассчитывает габариты, создаёт отправление и возвращает трек-номер в Ozon. Вместо ручного переноса 50 заказов в день — автоматический процесс за секунды.",
+      "tools": [
+        "Ozon",
+        "Почта России",
+        "Альбато"
+      ],
+      "tags": [
+        "FBS",
+        "логистика",
+        "интеграция",
+        "заказы"
+      ],
+      "result": "Исключена ручная работа по переносу адресов и габаритов, снижен риск ошибок, сэкономлены часы рабочего времени ежедневно",
+      "relevance_score": 8,
+      "source_url": "https://t.me/albatonews/340",
+      "source_chat": "Альбато | 1 000+ сервисов для интеграций и автоматизаций без кода",
+      "source_chat_id": 1531254022,
+      "source_msg_id": 340,
       "added_date": "2026-05-15"
     },
     {
@@ -820,6 +2538,135 @@
       "added_date": "2026-05-14"
     },
     {
+      "id": "80ac77960c",
+      "niche": "Рекрутмент",
+      "niche_en": "recruitment",
+      "title": "Автоматизация генерации сопроводительных писем через N8N и OpenAI",
+      "description": "N8N-воркфлоу автоматически собирает данные о вакансиях и резюме, генерирует персонализированные сопроводительные письма через OpenAI, сохраняет результаты в Data Table и отправляет в GitHub. Применимо для соискателей, желающих масштабировать подачу заявок.",
+      "tools": [
+        "N8N",
+        "OpenAI",
+        "GitHub",
+        "Data Table",
+        "httpRequest"
+      ],
+      "tags": [
+        "генерация текста",
+        "AI",
+        "рекрутмент",
+        "воркфлоу"
+      ],
+      "result": "",
+      "relevance_score": 6,
+      "source_url": "https://t.me/N8N_automatisation/900",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 900,
+      "added_date": "2026-05-14"
+    },
+    {
+      "id": "b1ae981ea5",
+      "niche": "E-commerce маркетинг",
+      "niche_en": "ecommerce_marketing",
+      "title": "Автоматизация сбора и анализа ключевых слов Amazon",
+      "description": "Воркфлоу в N8N для маркетологов и аналитиков: собирает ключевые слова из Airtable, запрашивает данные через Amazon API, обрабатывает результаты и визуализирует в Sticky Note для анализа популярности ключевых слов по категориям товаров.",
+      "tools": [
+        "N8N",
+        "Airtable",
+        "Amazon API",
+        "Sticky Note"
+      ],
+      "tags": [
+        "ключевые слова",
+        "Amazon",
+        "SEO",
+        "аналитика"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/897",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 897,
+      "added_date": "2026-05-14"
+    },
+    {
+      "id": "b001435b9e",
+      "niche": "Аналитика и обработка данных",
+      "niche_en": "data_analytics",
+      "title": "Автоматизация анализа отзывов клиентов в N8N",
+      "description": "Воркфлоу в N8N собирает данные из форм, обрабатывает их через JavaScript для анализа отзывов клиентов, и отправляет сводку в Google Docs и по Gmail. Позволяет команде оставаться в курсе без ручной обработки данных.",
+      "tools": [
+        "N8N",
+        "Google Docs",
+        "Gmail",
+        "JavaScript",
+        "Form Trigger"
+      ],
+      "tags": [
+        "анализ данных",
+        "отзывы",
+        "автоматизация",
+        "N8N"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/895",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 895,
+      "added_date": "2026-05-14"
+    },
+    {
+      "id": "c8a9c99a3d",
+      "niche": "Лидогенерация",
+      "niche_en": "lead_generation",
+      "title": "Бот с проверкой подписки на канал для сбора аудитории в MAX",
+      "description": "Создан воркфлоу в Leadtex для автоматического сбора аудитории. Бот проверяет подписку пользователя на канал или чат перед выдачей материала (гайда). Механика: пользователь нажимает кнопку → бот проверяет подписку → выдаёт контент только подписчикам.",
+      "tools": [
+        "Leadtex",
+        "Telegram MAX",
+        "Telegram Bot API"
+      ],
+      "tags": [
+        "подписка",
+        "проверка",
+        "лидогенерация",
+        "воронка"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/leadteh/1821",
+      "source_chat": "Чат-боты | Leadtex",
+      "source_chat_id": 1467746907,
+      "source_msg_id": 1821,
+      "added_date": "2026-05-14"
+    },
+    {
+      "id": "0f242e0521",
+      "niche": "Продажи и управление сделками",
+      "niche_en": "sales_management",
+      "title": "Автоматический отчёт по зависшим сделкам для РОПа",
+      "description": "Компания с графиком 2/2 теряла клиентов, потому что заявки висели 3 дня до обработки. Внедрили автоматический ежеутренний отчёт РОПу о зависших сделках с указанием, кому передать. Менеджер видит риски за 2 минуты и может перераспределить работу между сменами.",
+      "tools": [
+        "CRM",
+        "автоматизация отчётов"
+      ],
+      "tags": [
+        "CRM",
+        "управление сделками",
+        "отчётность",
+        "контроль"
+      ],
+      "result": "Скорость обработки заявок сократилась с дней на часы, конверсия выросла, снизилось количество потерянных клиентов",
+      "relevance_score": 7,
+      "source_url": "https://t.me/sales_tools/178",
+      "source_chat": "Инструменты роста продаж | Заводов",
+      "source_chat_id": 1952024261,
+      "source_msg_id": 178,
+      "added_date": "2026-05-14"
+    },
+    {
       "id": "f5634bebd0",
       "niche": "Мобильные приложения",
       "niche_en": "mobile_apps",
@@ -873,6 +2720,115 @@
       "added_date": "2026-05-13"
     },
     {
+      "id": "0b18eb254f",
+      "niche": "Фитнес и диетология",
+      "niche_en": "fitness_nutrition",
+      "title": "Автоматизация генерации персонализированных планов питания в N8N",
+      "description": "Воркфлоу для диетологов и фитнес-тренеров: данные о здоровье клиента поступают через вебхук, обрабатываются OpenAI для создания индивидуального плана питания, результаты записываются в Notion и Google Sheets, автоматически создаются напоминания о приёмах пищи в Google Calendar.",
+      "tools": [
+        "N8N",
+        "Webhook",
+        "OpenAI",
+        "Notion",
+        "Google Sheets",
+        "Google Calendar"
+      ],
+      "tags": [
+        "питание",
+        "персонализация",
+        "AI",
+        "календарь"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/891",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 891,
+      "added_date": "2026-05-13"
+    },
+    {
+      "id": "ff932a1a60",
+      "niche": "Цифровой маркетинг",
+      "niche_en": "digital_marketing",
+      "title": "Автоматическая генерация AI-отчетов по Meta Ads в Slack",
+      "description": "Автоматизация в N8N собирает данные кампаний Meta Ads, обрабатывает их через Claude AI и отправляет структурированные отчеты в Slack по расписанию. Каждый понедельник команда получает готовый анализ метрик рекламы без ручной работы.",
+      "tools": [
+        "N8N",
+        "Meta Ads API",
+        "Claude (Anthropic)",
+        "Slack",
+        "MCP Client Tool"
+      ],
+      "tags": [
+        "отчеты",
+        "Meta Ads",
+        "AI",
+        "Slack"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/889",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 889,
+      "added_date": "2026-05-13"
+    },
+    {
+      "id": "8c850cc352",
+      "niche": "Управление сообществом",
+      "niche_en": "community_management",
+      "title": "Автоматизация ответов на вопросы в Facebook группе через GPT-4",
+      "description": "Администратор Facebook группы внедрил автоматизацию в n8n, которая собирает запросы участников, генерирует ответы через GPT-4, извлекает данные через Apify и сохраняет результаты в Google Sheets. Решение сокращает время реакции на часто задаваемые вопросы.",
+      "tools": [
+        "n8n",
+        "GPT-4",
+        "Apify",
+        "Google Sheets",
+        "Facebook"
+      ],
+      "tags": [
+        "FAQ",
+        "сообщество",
+        "GPT",
+        "автоответы"
+      ],
+      "result": "Сокращение времени реакции на запросы участников",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/886",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 886,
+      "added_date": "2026-05-13"
+    },
+    {
+      "id": "02d04e2236",
+      "niche": "Лидогенерация",
+      "niche_en": "lead_generation",
+      "title": "Автоматизация горячих лидов из квизов в CRM",
+      "description": "Компания внедрила интеграцию квиз-платформы (Marquiz/Enquiz) с CRM (amoCRM) через Альбато. Заявки теперь попадают в воронку за секунды вместо часов, плюс мгновенное уведомление менеджеру в Telegram для быстрого контакта с горячим лидом.",
+      "tools": [
+        "Marquiz",
+        "Enquiz",
+        "amoCRM",
+        "Альбато",
+        "Telegram"
+      ],
+      "tags": [
+        "квиз",
+        "лидогенерация",
+        "CRM",
+        "интеграция"
+      ],
+      "result": "Конверсия квизов 12-30% против 3-8% у форм. Время попадания заявки в CRM сокращено с часов до секунд",
+      "relevance_score": 7,
+      "source_url": "https://t.me/albatonews/338",
+      "source_chat": "Альбато | 1 000+ сервисов для интеграций и автоматизаций без кода",
+      "source_chat_id": 1531254022,
+      "source_msg_id": 338,
+      "added_date": "2026-05-13"
+    },
+    {
       "id": "0bffc752ee",
       "niche": "Онлайн-образование (финансовая грамотность)",
       "niche_en": "online_education_finance",
@@ -919,6 +2875,163 @@
       "source_chat_id": 2121287316,
       "source_msg_id": 1342,
       "added_date": "2026-05-12"
+    },
+    {
+      "id": "6f15dcd874",
+      "niche": "Разработка ПО",
+      "niche_en": "software_development",
+      "title": "Автоматизация проверки кода с AI-комментариями в GitHub",
+      "description": "Команда разработчиков внедрила автоматизацию в N8N, которая отслеживает коммиты в GitHub, отправляет код в OpenAI для анализа, получает комментарии и записывает результаты в Google Sheets. Позволяет ускорить процесс code review и централизовать замечания.",
+      "tools": [
+        "N8N",
+        "GitHub",
+        "Google Sheets",
+        "OpenAI",
+        "githubTrigger"
+      ],
+      "tags": [
+        "code review",
+        "GitHub",
+        "AI",
+        "N8N"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/883",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 883,
+      "added_date": "2026-05-12"
+    },
+    {
+      "id": "0eca926055",
+      "niche": "Аналитика данных",
+      "niche_en": "data_analytics",
+      "title": "Автоматизация сбора и визуализации данных из Airtable в Google Sheets",
+      "description": "Рабочий процесс в N8N собирает данные из Airtable, обрабатывает их через узлы обработки и объединяет информацию с помощью merge-узла. Результаты отправляются в Google Sheets для анализа и визуализации. Подходит для аналитиков и менеджеров проектов, работающих с большими объемами данных о продажах.",
+      "tools": [
+        "N8N",
+        "Airtable",
+        "Google Sheets"
+      ],
+      "tags": [
+        "данные",
+        "отчёты",
+        "интеграция"
+      ],
+      "result": "",
+      "relevance_score": 6,
+      "source_url": "https://t.me/N8N_automatisation/881",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 881,
+      "added_date": "2026-05-12"
+    },
+    {
+      "id": "319653e5a1",
+      "niche": "Юридические услуги",
+      "niche_en": "legal_services",
+      "title": "Автоматизация обработки запросов на доступ к данным с AI-агентами",
+      "description": "Система на n8n собирает запросы на данные через вебхуки, анализирует права доступа с помощью AI-агентов, генерирует отчёты и отправляет результаты по email ответственным лицам. Применяется для автоматизации соблюдения норм защиты данных и GDPR-требований.",
+      "tools": [
+        "n8n",
+        "Webhook",
+        "AI Agent",
+        "Anthropic LM",
+        "Email"
+      ],
+      "tags": [
+        "GDPR",
+        "управление данными",
+        "AI-агент",
+        "отчёты"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/879",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 879,
+      "added_date": "2026-05-12"
+    },
+    {
+      "id": "346e5a5f63",
+      "niche": "Журналистика и исследования",
+      "niche_en": "journalism_research",
+      "title": "Автоматизация сбора новостей через Perplexity и OpenAI в Google Sheets",
+      "description": "Автоматизация в n8n собирает новости по расписанию через Perplexity, обрабатывает их с помощью OpenAI и записывает результаты в Google Sheets с автоматическим обновлением записей. Подходит журналистам и исследователям для ежедневного мониторинга актуальных новостей по интересующим темам.",
+      "tools": [
+        "n8n",
+        "Perplexity",
+        "OpenAI",
+        "Google Sheets"
+      ],
+      "tags": [
+        "новости",
+        "мониторинг",
+        "Google Sheets",
+        "AI"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/876",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 876,
+      "added_date": "2026-05-11"
+    },
+    {
+      "id": "a08a7fa0e7",
+      "niche": "Продажи и управление командой",
+      "niche_en": "sales_management",
+      "title": "Автоматизация расчета комиссий продавцов через N8N",
+      "description": "Еженедельная автоматизация собирает данные о продажах из Google Sheets, рассчитывает комиссии через функцию и отправляет результаты продавцам по email. Запускается по расписанию (Cron).",
+      "tools": [
+        "N8N",
+        "Google Sheets",
+        "Cron",
+        "SMTP",
+        "Function"
+      ],
+      "tags": [
+        "расчеты",
+        "комиссии",
+        "расписание",
+        "email"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/873",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 873,
+      "added_date": "2026-05-11"
+    },
+    {
+      "id": "2c73830eda",
+      "niche": "Аналитика данных",
+      "niche_en": "data_analytics",
+      "title": "Автоматизация загрузки документов в векторную БД Pinecone",
+      "description": "Воркфлоу в N8N для автоматической загрузки документов из Google Drive, разбиения их на смысловые блоки, преобразования в векторные представления через OpenAI и сохранения в Pinecone. Применимо для компаний, работающих с большими объемами текстовых данных и нуждающихся в быстром поиске информации.",
+      "tools": [
+        "N8N",
+        "Google Drive",
+        "OpenAI",
+        "Pinecone"
+      ],
+      "tags": [
+        "документы",
+        "векторизация",
+        "поиск",
+        "embeddings"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/870",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 870,
+      "added_date": "2026-05-11"
     },
     {
       "id": "3f1711a395",
@@ -977,6 +3090,135 @@
       "added_date": "2026-05-10"
     },
     {
+      "id": "a4b6ff24a2",
+      "niche": "Аналитика данных",
+      "niche_en": "data_analytics",
+      "title": "Автоматизация подготовки CSV файлов с GPT-4 в N8N",
+      "description": "Workflow в N8N, который принимает текстовые данные, обрабатывает их через GPT-4, разбивает на партии и формирует CSV-файлы для дальнейшего анализа. Применяется для структурирования отзывов клиентов и подготовки отчетов.",
+      "tools": [
+        "N8N",
+        "GPT-4",
+        "OpenAI"
+      ],
+      "tags": [
+        "обработка данных",
+        "CSV",
+        "GPT-4",
+        "N8N"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/865",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 865,
+      "added_date": "2026-05-10"
+    },
+    {
+      "id": "8688863c5c",
+      "niche": "Управление знаниями и документами",
+      "niche_en": "knowledge_management",
+      "title": "RAG-система для поиска по документам компании в Google Диске",
+      "description": "Автоматизация в N8N извлекает документы из Google Диска, разбивает на части, создает векторные представления через Google Gemini и сохраняет в Pinecone. AI-агент обрабатывает запросы сотрудников и мгновенно находит релевантные фрагменты документов.",
+      "tools": [
+        "N8N",
+        "Google Drive",
+        "Google Gemini",
+        "Pinecone",
+        "AI Agent"
+      ],
+      "tags": [
+        "RAG",
+        "поиск по документам",
+        "AI-агент",
+        "векторизация"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/863",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 863,
+      "added_date": "2026-05-10"
+    },
+    {
+      "id": "a293f0634b",
+      "niche": "Event Management",
+      "niche_en": "event_management",
+      "title": "Telegram-бот для FAQ и информации о событиях через N8N",
+      "description": "Организация автоматизировала обработку запросов о событиях в Telegram. Бот обращается к MongoDB за информацией о событиях и FAQ, формирует ответы через Google Sheets и отправляет их пользователю с возможностью выбора.",
+      "tools": [
+        "N8N",
+        "Telegram",
+        "MongoDB",
+        "Google Sheets"
+      ],
+      "tags": [
+        "чат-бот",
+        "FAQ",
+        "события",
+        "Telegram"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/860",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 860,
+      "added_date": "2026-05-09"
+    },
+    {
+      "id": "682659029a",
+      "niche": "Маркетинг и социальные сети",
+      "niche_en": "social_media_marketing",
+      "title": "Автоматизация кросс-постинга из Twitter в LinkedIn, X и Telegram",
+      "description": "N8N-воркфлоу для маркетологов: отслеживает новые твиты, обрабатывает их через условия и автоматически распространяет на LinkedIn, X и Telegram. Триггер — новое сообщение в Twitter, обработка через Code и Switch-ноды, отправка на три платформы одновременно.",
+      "tools": [
+        "N8N",
+        "Twitter API",
+        "LinkedIn API",
+        "Telegram API"
+      ],
+      "tags": [
+        "кросс-постинг",
+        "социальные сети",
+        "n8n"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/857",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 857,
+      "added_date": "2026-05-09"
+    },
+    {
+      "id": "752d59149d",
+      "niche": "B2B продажи",
+      "niche_en": "b2b_sales",
+      "title": "Автоматизация персонализированных холодных писем через N8N",
+      "description": "Воркфлоу в N8N генерирует персонализированные ледоколы для холодных писем на основе данных из Google Sheets. Система использует OpenAI для создания текста, разбивает результаты на части и отправляет в Slack. Подходит для маркетологов и продажников, работающих с разными сегментами клиентов.",
+      "tools": [
+        "N8N",
+        "Google Sheets",
+        "OpenAI",
+        "Slack"
+      ],
+      "tags": [
+        "холодные письма",
+        "персонализация",
+        "AI",
+        "воркфлоу"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/854",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 854,
+      "added_date": "2026-05-09"
+    },
+    {
       "id": "e5a85e52c1",
       "niche": "Лидогенерация и продажи",
       "niche_en": "lead_generation",
@@ -1005,6 +3247,199 @@
       "added_date": "2026-05-08"
     },
     {
+      "id": "c008624538",
+      "niche": "Продажи и маркетинг",
+      "niche_en": "sales_marketing",
+      "title": "Автоматизация подготовки встреч с обогащением данных клиентов",
+      "description": "Воркфлоу в N8N для команд продаж: извлечение данных клиентов из Airtable, обогащение информации через Bright Data и Chain LLM, отправка подготовленного письма в Gmail. Автоматизация фильтрует и обрабатывает данные перед встречей с потенциальным клиентом.",
+      "tools": [
+        "N8N",
+        "Airtable",
+        "Bright Data",
+        "Chain LLM",
+        "Gmail"
+      ],
+      "tags": [
+        "обогащение данных",
+        "подготовка встреч",
+        "продажи",
+        "LLM"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/851",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 851,
+      "added_date": "2026-05-08"
+    },
+    {
+      "id": "a30fe4af67",
+      "niche": "Управление проектами",
+      "niche_en": "project_management",
+      "title": "Классификация задач из Microsoft Teams в Notion через OpenAI",
+      "description": "Автоматизация в n8n получает новые задачи из Microsoft Teams через вебхук, отправляет их в OpenAI для классификации, затем добавляет в Notion с уведомлением в Slack. Применимо для команд, работающих в Teams и Notion.",
+      "tools": [
+        "n8n",
+        "Microsoft Teams",
+        "OpenAI API",
+        "Notion",
+        "Slack",
+        "Webhook",
+        "HTTP Request"
+      ],
+      "tags": [
+        "классификация",
+        "Teams",
+        "Notion",
+        "AI"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/849",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 849,
+      "added_date": "2026-05-08"
+    },
+    {
+      "id": "66ae7b673b",
+      "niche": "Разработка ПО",
+      "niche_en": "software_development",
+      "title": "AI-чат для запросов к PostgreSQL базе данных",
+      "description": "Автоматизация в N8N, которая позволяет пользователям задавать вопросы на естественном языке, AI обрабатывает запросы и извлекает данные из PostgreSQL. Пример: пользователь спрашивает 'Покажи последние 10 заказов' и получает результат мгновенно.",
+      "tools": [
+        "N8N",
+        "PostgreSQL",
+        "OpenAI",
+        "Chat Trigger",
+        "Agent"
+      ],
+      "tags": [
+        "AI",
+        "база данных",
+        "чат",
+        "запросы"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/847",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 847,
+      "added_date": "2026-05-08"
+    },
+    {
+      "id": "7b6f200da9",
+      "niche": "Онлайн-образование",
+      "niche_en": "online_education",
+      "title": "Автоматизация процессов онлайн-школы: 5 интеграций вместо ручного переноса данных",
+      "description": "Онлайн-школа использовала 5 сервисов (GetCourse, amoCRM, Тильда, VK Реклама, Google Таблицы) с ручным переносом данных между ними. Внедрили 5 автоматических связок: лиды из рекламы в LMS, заказы в CRM, уведомления менеджерам, заявки с лендинга, отчётность в таблицы.",
+      "tools": [
+        "GetCourse",
+        "amoCRM",
+        "Тильда",
+        "VK Реклама",
+        "Google Таблицы",
+        "Telegram",
+        "Albato"
+      ],
+      "tags": [
+        "интеграции",
+        "LMS",
+        "CRM",
+        "лиды",
+        "отчётность"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/albatonews/335",
+      "source_chat": "Альбато | 1 000+ сервисов для интеграций и автоматизаций без кода",
+      "source_chat_id": 1531254022,
+      "source_msg_id": 335,
+      "added_date": "2026-05-08"
+    },
+    {
+      "id": "19890814c7",
+      "niche": "Контент-маркетинг",
+      "niche_en": "content_marketing",
+      "title": "Автоматизация генерации сценариев для Instagram Reels через N8N",
+      "description": "Воркфлоу для контент-мейкеров: идея отправляется в Telegram, обрабатывается AI (OpenAI), сценарий сохраняется в Google Sheets и отправляется обратно в Telegram. Использует N8N с нодами: telegramTrigger, lmChatOpenAi, memoryBufferWindow, googleSheetsTool, agent.",
+      "tools": [
+        "N8N",
+        "Telegram",
+        "OpenAI",
+        "Google Sheets"
+      ],
+      "tags": [
+        "контент",
+        "AI",
+        "Instagram",
+        "N8N"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/845",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 845,
+      "added_date": "2026-05-07"
+    },
+    {
+      "id": "2169eeaa1b",
+      "niche": "Управление проектами",
+      "niche_en": "project_management",
+      "title": "Автоматизированное резюме доски Trello с GPT-5 Nano",
+      "description": "Автоматизация собирает данные из Trello, обрабатывает их GPT-5 Nano для создания краткого резюме и формирует наглядные заметки со стикерами. Еженедельно подводит итоги задач для команды в виде визуализированного отчета.",
+      "tools": [
+        "N8N",
+        "Trello",
+        "GPT-5 Nano",
+        "OpenAI API"
+      ],
+      "tags": [
+        "отчетность",
+        "Trello",
+        "GPT",
+        "резюме"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/842",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 842,
+      "added_date": "2026-05-07"
+    },
+    {
+      "id": "3ba66ac45b",
+      "niche": "CRM и управление клиентами",
+      "niche_en": "crm_management",
+      "title": "AI-чат для запросов к Airtable CRM через GPT-4",
+      "description": "Автоматизация в N8N, которая позволяет вести диалог с данными CRM через естественный язык. Пользователь задаёт вопрос в чат, GPT-4 обрабатывает запрос, система возвращает информацию из Airtable. Применимо для менеджеров и предпринимателей, работающих с клиентскими данными.",
+      "tools": [
+        "N8N",
+        "OpenAI GPT-4",
+        "Airtable",
+        "Chat Trigger",
+        "Agent",
+        "Memory Buffer Window"
+      ],
+      "tags": [
+        "CRM",
+        "AI-агент",
+        "Airtable",
+        "запросы к данным"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/839",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 839,
+      "added_date": "2026-05-07"
+    },
+    {
       "id": "7cc21871f8",
       "niche": "Интернет-маркетинг",
       "niche_en": "digital_marketing",
@@ -1027,6 +3462,110 @@
       "source_chat": "НефтеТрафик про лидген",
       "source_chat_id": 1542552403,
       "source_msg_id": 1430,
+      "added_date": "2026-05-06"
+    },
+    {
+      "id": "2bdc1f19c1",
+      "niche": "Дизайн и маркетинг",
+      "niche_en": "design_marketing",
+      "title": "Автоматизация анализа и обработки изображений через Telegram",
+      "description": "N8N-воркфлоу для обработки изображений: пользователь отправляет фото в Telegram, система анализирует его через OpenAI и Chain LLM, изменяет размер по параметрам и возвращает обработанное изображение с рекомендациями. Подходит маркетологам и дизайнерам для быстрой обработки логотипов и визуала.",
+      "tools": [
+        "N8N",
+        "Telegram",
+        "OpenAI",
+        "Chain LLM"
+      ],
+      "tags": [
+        "обработка изображений",
+        "Telegram",
+        "AI анализ",
+        "воркфлоу"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/837",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 837,
+      "added_date": "2026-05-06"
+    },
+    {
+      "id": "fe39610fd4",
+      "niche": "Управление проектами и продуктивность",
+      "niche_en": "project_management",
+      "title": "Ежедневный брифинг из задач и календаря с AI-сводкой",
+      "description": "Автоматизация в n8n собирает задачи из Todoist и события из Google Calendar, обрабатывает их через OpenAI для создания сводки и отправляет по email через Gmail. Срабатывает по расписанию каждое утро.",
+      "tools": [
+        "n8n",
+        "Todoist",
+        "Google Calendar",
+        "OpenAI",
+        "Gmail",
+        "Sticky Note"
+      ],
+      "tags": [
+        "продуктивность",
+        "email",
+        "AI",
+        "расписание"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/834",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 834,
+      "added_date": "2026-05-06"
+    },
+    {
+      "id": "c552d7e5c2",
+      "niche": "SaaS/Разработка",
+      "niche_en": "saas_development",
+      "title": "Чат-бот с историей в Postgres через N8N и Google Gemini",
+      "description": "Автоматизация в N8N для создания чат-бота, который сохраняет историю общения в Postgres через Supabase и использует Google Gemini для персонализированных ответов. Данные из предыдущих взаимодействий загружаются для контекста.",
+      "tools": [
+        "N8N",
+        "Supabase",
+        "Postgres",
+        "Google Gemini"
+      ],
+      "tags": [
+        "чат-бот",
+        "база данных",
+        "AI",
+        "история диалогов"
+      ],
+      "result": "",
+      "relevance_score": 6,
+      "source_url": "https://t.me/N8N_automatisation/832",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 832,
+      "added_date": "2026-05-06"
+    },
+    {
+      "id": "1238f946b3",
+      "niche": "Продажи и управление клиентами",
+      "niche_en": "sales_crm",
+      "title": "Синхронизация переписки между МАКС и amoCRM",
+      "description": "Менеджеры общаются с клиентами через мессенджер МАКС, а сделки ведут в amoCRM. Интеграция через Альбато синхронизирует сообщения в обе стороны: входящие сообщения попадают в карточку сделки, ответы из CRM отправляются клиенту автоматически.",
+      "tools": [
+        "МАКС",
+        "amoCRM",
+        "Альбато"
+      ],
+      "tags": [
+        "мессенджеры",
+        "CRM",
+        "синхронизация"
+      ],
+      "result": "Настройка занимает 10 минут, исключает переключение между окнами и потерю контекста",
+      "relevance_score": 7,
+      "source_url": "https://t.me/albatonews/333",
+      "source_chat": "Альбато | 1 000+ сервисов для интеграций и автоматизаций без кода",
+      "source_chat_id": 1531254022,
+      "source_msg_id": 333,
       "added_date": "2026-05-06"
     },
     {
@@ -1057,6 +3596,60 @@
       "source_chat": "Канал Игоря Зуевича",
       "source_chat_id": 1091643079,
       "source_msg_id": 1972,
+      "added_date": "2026-05-05"
+    },
+    {
+      "id": "026e34c4f7",
+      "niche": "Маркетинг и аналитика",
+      "niche_en": "marketing_analytics",
+      "title": "Мониторинг упоминаний бренда в Twitter и Reddit с анализом AI",
+      "description": "Автоматизация в n8n собирает упоминания бренда из Twitter и Reddit, анализирует тональность и содержание через Google Gemini, записывает структурированные результаты в Google Sheets. Маркетологи получают готовые данные для анализа реакции пользователей на продукты.",
+      "tools": [
+        "n8n",
+        "Twitter API",
+        "Reddit API",
+        "Google Gemini",
+        "Google Sheets"
+      ],
+      "tags": [
+        "мониторинг",
+        "соцсети",
+        "AI-анализ",
+        "CRM"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/830",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 830,
+      "added_date": "2026-05-05"
+    },
+    {
+      "id": "befb28295d",
+      "niche": "Управление проектами",
+      "niche_en": "project_management",
+      "title": "Автоматизация преобразования задач из Slack в визуальные заметки через OpenAI",
+      "description": "Рабочий процесс в N8N собирает текстовые заметки из Slack, обрабатывает их через OpenAI и создает цветокодированные визуальные заметки в Sticky Note. Система автоматически определяет приоритеты и форматирует информацию для быстрой идентификации.",
+      "tools": [
+        "N8N",
+        "Slack",
+        "OpenAI",
+        "Sticky Note",
+        "Chain LLM"
+      ],
+      "tags": [
+        "Slack",
+        "OpenAI",
+        "визуализация",
+        "задачи"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/827",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 827,
       "added_date": "2026-05-05"
     },
     {
@@ -1109,6 +3702,193 @@
       "source_chat_id": 2977312453,
       "source_msg_id": 24,
       "added_date": "2026-05-04"
+    },
+    {
+      "id": "2c9dab319b",
+      "niche": "B2B маркетинг и продажи",
+      "niche_en": "b2b_sales_marketing",
+      "title": "Автоматизация обогащения лидов и подготовки встреч в N8N",
+      "description": "Воркфлоу в N8N для маркетинговых команд: система собирает данные о лидах из Airtable, обогащает их через Bright Data, анализирует через Chain LLM, фильтрует по условиям и отправляет сводку менеджеру на Gmail. Процесс выполняется автоматически за несколько минут после добавления лида.",
+      "tools": [
+        "N8N",
+        "Airtable",
+        "Bright Data",
+        "Chain LLM",
+        "Gmail"
+      ],
+      "tags": [
+        "обогащение лидов",
+        "встречи",
+        "маркетинг",
+        "LLM"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/821",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 821,
+      "added_date": "2026-05-04"
+    },
+    {
+      "id": "a004557d08",
+      "niche": "Интернет-магазин",
+      "niche_en": "ecommerce",
+      "title": "Автоматическая генерация описаний товаров в Adobe Commerce через AI",
+      "description": "Автоматизация в N8N собирает данные о товарах из Adobe Commerce, отправляет их в Chain LLM с Azure OpenAI для генерации уникальных описаний, затем загружает результаты обратно в каталог. Пример: автоматическое создание описания новой модели обуви на основе её характеристик.",
+      "tools": [
+        "N8N",
+        "Adobe Commerce",
+        "Chain LLM",
+        "Azure OpenAI"
+      ],
+      "tags": [
+        "генерация контента",
+        "AI",
+        "ecommerce",
+        "каталог"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/818",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 818,
+      "added_date": "2026-05-04"
+    },
+    {
+      "id": "e489e5d5b9",
+      "niche": "Разработка ПО",
+      "niche_en": "software_development",
+      "title": "Мониторинг GitHub с ИИ-резюме в Telegram",
+      "description": "Автоматизация отслеживает обновления репозитория GitHub, фильтрует важные коммиты и генерирует резюме через ИИ. Результаты отправляются в Telegram-канал для оперативного уведомления команды разработчиков.",
+      "tools": [
+        "n8n",
+        "GitHub API",
+        "OpenAI",
+        "Telegram API"
+      ],
+      "tags": [
+        "мониторинг",
+        "GitHub",
+        "ИИ",
+        "уведомления"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/816",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 816,
+      "added_date": "2026-05-04"
+    },
+    {
+      "id": "89578f0c74",
+      "niche": "E-commerce",
+      "niche_en": "ecommerce",
+      "title": "BPMN + ADKAR: внедрение процесса обработки заказов без сопротивления команды",
+      "description": "E-commerce компания внедрила новый процесс обработки заказов, используя BPMN для описания и ADKAR для управления изменениями. Интегрировали 1С:УТ и Битрикс24 так, чтобы статус заказа менялся автоматически без участия менеджера. Решили проблему возврата к старому процессу через две недели после внедрения.",
+      "tools": [
+        "BPMN",
+        "ADKAR",
+        "1С:УТ",
+        "Битрикс24"
+      ],
+      "tags": [
+        "процессы",
+        "изменения",
+        "e-commerce",
+        "интеграция"
+      ],
+      "result": "Снизили количество заказов в статусе 'Ожидает оплаты' >24ч, исключили ручные корректировки, устранили обращения клиентов 'оплатил, а не отгрузили'",
+      "relevance_score": 8,
+      "source_url": "https://t.me/bpmn2ru/1988",
+      "source_chat": "BPM, Бизнес-процессы и котики",
+      "source_chat_id": 1291279847,
+      "source_msg_id": 1988,
+      "added_date": "2026-05-04"
+    },
+    {
+      "id": "af7ee1fb7f",
+      "niche": "Образование",
+      "niche_en": "education",
+      "title": "Автоматическое создание персонализированных учебных планов через N8N",
+      "description": "Образовательное учреждение внедрило автоматизацию, которая собирает результаты оценок студентов через Webhook, обрабатывает их с помощью OpenAI для создания индивидуальных учебных путей, сохраняет в Google Sheets и отправляет уведомление по email с деталями плана.",
+      "tools": [
+        "N8N",
+        "Webhook",
+        "OpenAI",
+        "Google Sheets",
+        "SMTP"
+      ],
+      "tags": [
+        "персонализация",
+        "AI",
+        "учебные планы",
+        "email"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/813",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 813,
+      "added_date": "2026-05-03"
+    },
+    {
+      "id": "c47487d374",
+      "niche": "Маркетинговые исследования",
+      "niche_en": "market_research",
+      "title": "Автоматизация сбора и анализа конкурентов из Google Maps",
+      "description": "Воркфлоу в n8n для извлечения данных о бизнесах из Google Maps через Apify, обработки описаний через OpenAI и сохранения в Google Sheets. Включает удаление дубликатов и разбиение на партии для анализа конкурентов.",
+      "tools": [
+        "n8n",
+        "Apify",
+        "OpenAI",
+        "Google Sheets"
+      ],
+      "tags": [
+        "конкуренты",
+        "Google Maps",
+        "сбор данных",
+        "анализ"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/N8N_automatisation/811",
+      "source_chat": "Автоматизация в N8N",
+      "source_chat_id": 2690694646,
+      "source_msg_id": 811,
+      "added_date": "2026-05-03"
+    },
+    {
+      "id": "b1c34c5e07",
+      "niche": "Контакт-центр / CRM",
+      "niche_en": "contact_center",
+      "title": "Интеграция ИИ-бота в Битрикс24 через Открытые линии",
+      "description": "ProTalk выпустило официальное приложение для Битрикс24, которое позволяет подключить ИИ-агента к любым каналам коммуникации (WhatsApp, Telegram, ВКонтакте, Авито, омниканальные агрегаторы). Бот становится ответственным за диалоги в Контакт-центре и может обрабатывать входящие обращения автоматически.",
+      "tools": [
+        "Битрикс24",
+        "ProTalk",
+        "Umnico",
+        "Wazzup",
+        "WhatsApp",
+        "Telegram",
+        "ВКонтакте"
+      ],
+      "tags": [
+        "ИИ-бот",
+        "CRM",
+        "омниканал",
+        "автоответчик"
+      ],
+      "result": "",
+      "relevance_score": 7,
+      "source_url": "https://t.me/protalk_official/824",
+      "source_chat": "ProTalk - Ai агенты и нейросети для бизнеса. Каталог виртуальных специалистов, помощников на основе ИИ",
+      "source_chat_id": 1889983114,
+      "source_msg_id": 824,
+      "added_date": "2026-05-03"
     },
     {
       "id": "14a74c3dec",
