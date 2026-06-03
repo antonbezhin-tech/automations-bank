@@ -217,23 +217,27 @@
     font-style: italic;
   }
 
+  /* Фильтры — горизонтальный скролл на всех экранах */
+  #niche-filters {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 2px;
+  }
+  #niche-filters::-webkit-scrollbar { display: none; }
+  .niche-pill { flex-shrink: 0; }
+
   /* Responsive layout */
   @media (max-width: 640px) {
     .case-result { font-size: 2.5rem; }
 
-    /* Фильтры — горизонтальный скролл, не перенос */
+    /* На мобилке — выходим за паддинг контейнера */
     #niche-filters {
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-width: none;
-      padding-bottom: 2px;
       margin: 0 -1.25rem;
       padding-left: 1.25rem;
       padding-right: 1.25rem;
     }
-    #niche-filters::-webkit-scrollbar { display: none; }
-    .niche-pill { flex-shrink: 0; }
   }
 </style>
 </head>
@@ -411,7 +415,7 @@ function caseHTML(c, index) {
   const ctaLink = `${TG_LINK}?text=${ctaText}`;
 
   return `
-    <article class="case py-10 md:py-14 grid md:grid-cols-[200px_1fr] gap-6 md:gap-10 rise" style="animation-delay: ${Math.min(index, 8) * 60}ms;">
+    <article class="case py-10 md:py-14 grid md:grid-cols-[200px_1fr] gap-6 md:gap-10" data-anim-index="${index}">
       <div class="md:text-right">
         ${highlight ? `<div class="case-result text-5xl md:text-7xl">${escape(highlight)}</div>` : '<div class="font-mono text-xs uppercase" style="color: var(--muted);">Кейс</div>'}
         <div class="font-mono text-xs uppercase tracking-widest mt-3" style="color: var(--accent);">
@@ -471,6 +475,15 @@ function renderFeed() {
   }
 
   feed.innerHTML = filtered.map((c, i) => caseHTML(c, i)).join('');
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      feed.querySelectorAll('.case').forEach(el => {
+        const idx = parseInt(el.dataset.animIndex || '0');
+        el.style.animationDelay = `${Math.min(idx, 8) * 60}ms`;
+        el.classList.add('rise');
+      });
+    });
+  });
 }
 
 async function load() {
